@@ -14,6 +14,9 @@
 		08E88BAC1DE8FBB9004CA536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E88BAA1DE8FBB9004CA536 /* LaunchScreen.storyboard */; };
 		08E88BB71DE8FBB9004CA536 /* ZalandoWardrobeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BB61DE8FBB9004CA536 /* ZalandoWardrobeTests.swift */; };
 		08E88BC21DE8FBB9004CA536 /* ZalandoWardrobeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BC11DE8FBB9004CA536 /* ZalandoWardrobeUITests.swift */; };
+		7D65F9B77701073B4CAAD03E /* Pods_ZalandoWardrobeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB56BD505C52D187DCAC5927 /* Pods_ZalandoWardrobeTests.framework */; };
+		9CB0C0D745EECFA1E0C6BEFD /* Pods_ZalandoWardrobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3271D3F52B6E963AEBB17A5D /* Pods_ZalandoWardrobe.framework */; };
+		C7730E93A8F2E96B143A3782 /* Pods_ZalandoWardrobeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E630DEDD05C48604FD73216 /* Pods_ZalandoWardrobeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,15 @@
 		08E88BBD1DE8FBB9004CA536 /* ZalandoWardrobeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZalandoWardrobeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E88BC11DE8FBB9004CA536 /* ZalandoWardrobeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZalandoWardrobeUITests.swift; sourceTree = "<group>"; };
 		08E88BC31DE8FBB9004CA536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3271D3F52B6E963AEBB17A5D /* Pods_ZalandoWardrobe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZalandoWardrobe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		524E402C36A923691C466E53 /* Pods-ZalandoWardrobeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZalandoWardrobeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZalandoWardrobeUITests/Pods-ZalandoWardrobeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6E630DEDD05C48604FD73216 /* Pods_ZalandoWardrobeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZalandoWardrobeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8742B39F4916DCECE750DB38 /* Pods-ZalandoWardrobeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZalandoWardrobeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZalandoWardrobeTests/Pods-ZalandoWardrobeTests.release.xcconfig"; sourceTree = "<group>"; };
+		96AD445C19242D9E3B49E361 /* Pods-ZalandoWardrobeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZalandoWardrobeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZalandoWardrobeUITests/Pods-ZalandoWardrobeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4B3C0E3FF2E2332468A3F39 /* Pods-ZalandoWardrobe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZalandoWardrobe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZalandoWardrobe/Pods-ZalandoWardrobe.debug.xcconfig"; sourceTree = "<group>"; };
+		DA02A9E3AC082943694D624F /* Pods-ZalandoWardrobe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZalandoWardrobe.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZalandoWardrobe/Pods-ZalandoWardrobe.release.xcconfig"; sourceTree = "<group>"; };
+		E2074A1CB091F85C5ECA61A7 /* Pods-ZalandoWardrobeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZalandoWardrobeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZalandoWardrobeTests/Pods-ZalandoWardrobeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB56BD505C52D187DCAC5927 /* Pods_ZalandoWardrobeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZalandoWardrobeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB0C0D745EECFA1E0C6BEFD /* Pods_ZalandoWardrobe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D65F9B77701073B4CAAD03E /* Pods_ZalandoWardrobeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7730E93A8F2E96B143A3782 /* Pods_ZalandoWardrobeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				08E88BB51DE8FBB9004CA536 /* ZalandoWardrobeTests */,
 				08E88BC01DE8FBB9004CA536 /* ZalandoWardrobeUITests */,
 				08E88B9F1DE8FBB9004CA536 /* Products */,
+				0A2B1BF1AE9002671331BD74 /* Pods */,
+				2E78372846E845EE3D993A71 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = ZalandoWardrobeUITests;
 			sourceTree = "<group>";
 		};
+		0A2B1BF1AE9002671331BD74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4B3C0E3FF2E2332468A3F39 /* Pods-ZalandoWardrobe.debug.xcconfig */,
+				DA02A9E3AC082943694D624F /* Pods-ZalandoWardrobe.release.xcconfig */,
+				E2074A1CB091F85C5ECA61A7 /* Pods-ZalandoWardrobeTests.debug.xcconfig */,
+				8742B39F4916DCECE750DB38 /* Pods-ZalandoWardrobeTests.release.xcconfig */,
+				96AD445C19242D9E3B49E361 /* Pods-ZalandoWardrobeUITests.debug.xcconfig */,
+				524E402C36A923691C466E53 /* Pods-ZalandoWardrobeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2E78372846E845EE3D993A71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3271D3F52B6E963AEBB17A5D /* Pods_ZalandoWardrobe.framework */,
+				FB56BD505C52D187DCAC5927 /* Pods_ZalandoWardrobeTests.framework */,
+				6E630DEDD05C48604FD73216 /* Pods_ZalandoWardrobeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08E88BC61DE8FBB9004CA536 /* Build configuration list for PBXNativeTarget "ZalandoWardrobe" */;
 			buildPhases = (
+				C0B1CEAF9EF20F85FD0979D9 /* [CP] Check Pods Manifest.lock */,
 				08E88B9A1DE8FBB9004CA536 /* Sources */,
 				08E88B9B1DE8FBB9004CA536 /* Frameworks */,
 				08E88B9C1DE8FBB9004CA536 /* Resources */,
+				7B013C92D8258BAB1E85731A /* [CP] Embed Pods Frameworks */,
+				CAF8B965EF8C9EBFAE67470A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08E88BC91DE8FBB9004CA536 /* Build configuration list for PBXNativeTarget "ZalandoWardrobeTests" */;
 			buildPhases = (
+				C02B37F23E4B4F1D7BBA6919 /* [CP] Check Pods Manifest.lock */,
 				08E88BAE1DE8FBB9004CA536 /* Sources */,
 				08E88BAF1DE8FBB9004CA536 /* Frameworks */,
 				08E88BB01DE8FBB9004CA536 /* Resources */,
+				B8839E23C91CA4F873722BEC /* [CP] Embed Pods Frameworks */,
+				809A6969250AEB0F143D8AB8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08E88BCC1DE8FBB9004CA536 /* Build configuration list for PBXNativeTarget "ZalandoWardrobeUITests" */;
 			buildPhases = (
+				E982985F23964828AD354D13 /* [CP] Check Pods Manifest.lock */,
 				08E88BB91DE8FBB9004CA536 /* Sources */,
 				08E88BBA1DE8FBB9004CA536 /* Frameworks */,
 				08E88BBB1DE8FBB9004CA536 /* Resources */,
+				4FEE34FC77876C4C960A675B /* [CP] Embed Pods Frameworks */,
+				23CF7ABBE04170BA7E949164 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23CF7ABBE04170BA7E949164 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZalandoWardrobeUITests/Pods-ZalandoWardrobeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FEE34FC77876C4C960A675B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZalandoWardrobeUITests/Pods-ZalandoWardrobeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B013C92D8258BAB1E85731A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZalandoWardrobe/Pods-ZalandoWardrobe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		809A6969250AEB0F143D8AB8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZalandoWardrobeTests/Pods-ZalandoWardrobeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8839E23C91CA4F873722BEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZalandoWardrobeTests/Pods-ZalandoWardrobeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C02B37F23E4B4F1D7BBA6919 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0B1CEAF9EF20F85FD0979D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CAF8B965EF8C9EBFAE67470A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZalandoWardrobe/Pods-ZalandoWardrobe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E982985F23964828AD354D13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08E88B9A1DE8FBB9004CA536 /* Sources */ = {
@@ -410,6 +597,7 @@
 		};
 		08E88BC71DE8FBB9004CA536 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4B3C0E3FF2E2332468A3F39 /* Pods-ZalandoWardrobe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZalandoWardrobe/Info.plist;
@@ -422,6 +610,7 @@
 		};
 		08E88BC81DE8FBB9004CA536 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA02A9E3AC082943694D624F /* Pods-ZalandoWardrobe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZalandoWardrobe/Info.plist;
@@ -434,6 +623,7 @@
 		};
 		08E88BCA1DE8FBB9004CA536 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2074A1CB091F85C5ECA61A7 /* Pods-ZalandoWardrobeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -448,6 +638,7 @@
 		};
 		08E88BCB1DE8FBB9004CA536 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8742B39F4916DCECE750DB38 /* Pods-ZalandoWardrobeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,6 +653,7 @@
 		};
 		08E88BCD1DE8FBB9004CA536 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96AD445C19242D9E3B49E361 /* Pods-ZalandoWardrobeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ZalandoWardrobeUITests/Info.plist;
@@ -475,6 +667,7 @@
 		};
 		08E88BCE1DE8FBB9004CA536 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 524E402C36A923691C466E53 /* Pods-ZalandoWardrobeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ZalandoWardrobeUITests/Info.plist;
@@ -505,6 +698,7 @@
 				08E88BC81DE8FBB9004CA536 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08E88BC91DE8FBB9004CA536 /* Build configuration list for PBXNativeTarget "ZalandoWardrobeTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +707,7 @@
 				08E88BCB1DE8FBB9004CA536 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08E88BCC1DE8FBB9004CA536 /* Build configuration list for PBXNativeTarget "ZalandoWardrobeUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +716,7 @@
 				08E88BCE1DE8FBB9004CA536 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
