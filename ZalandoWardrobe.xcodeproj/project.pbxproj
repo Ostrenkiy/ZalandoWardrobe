@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08E88BA21DE8FBB9004CA536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BA11DE8FBB9004CA536 /* AppDelegate.swift */; };
+		08E88BA41DE8FBB9004CA536 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BA31DE8FBB9004CA536 /* ViewController.swift */; };
+		08E88BA71DE8FBB9004CA536 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E88BA51DE8FBB9004CA536 /* Main.storyboard */; };
+		08E88BA91DE8FBB9004CA536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E88BA81DE8FBB9004CA536 /* Assets.xcassets */; };
+		08E88BAC1DE8FBB9004CA536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E88BAA1DE8FBB9004CA536 /* LaunchScreen.storyboard */; };
+		08E88BB71DE8FBB9004CA536 /* ZalandoWardrobeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BB61DE8FBB9004CA536 /* ZalandoWardrobeTests.swift */; };
+		08E88BC21DE8FBB9004CA536 /* ZalandoWardrobeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BC11DE8FBB9004CA536 /* ZalandoWardrobeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08E88BB31DE8FBB9004CA536 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E88B961DE8FBB9004CA536 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08E88B9D1DE8FBB9004CA536;
+			remoteInfo = ZalandoWardrobe;
+		};
+		08E88BBE1DE8FBB9004CA536 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08E88B961DE8FBB9004CA536 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08E88B9D1DE8FBB9004CA536;
+			remoteInfo = ZalandoWardrobe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08E88B9E1DE8FBB9004CA536 /* ZalandoWardrobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZalandoWardrobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E88BA11DE8FBB9004CA536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08E88BA31DE8FBB9004CA536 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08E88BA61DE8FBB9004CA536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08E88BA81DE8FBB9004CA536 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08E88BAB1DE8FBB9004CA536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08E88BAD1DE8FBB9004CA536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08E88BB21DE8FBB9004CA536 /* ZalandoWardrobeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZalandoWardrobeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E88BB61DE8FBB9004CA536 /* ZalandoWardrobeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZalandoWardrobeTests.swift; sourceTree = "<group>"; };
+		08E88BB81DE8FBB9004CA536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08E88BBD1DE8FBB9004CA536 /* ZalandoWardrobeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZalandoWardrobeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E88BC11DE8FBB9004CA536 /* ZalandoWardrobeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZalandoWardrobeUITests.swift; sourceTree = "<group>"; };
+		08E88BC31DE8FBB9004CA536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08E88B9B1DE8FBB9004CA536 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E88BAF1DE8FBB9004CA536 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E88BBA1DE8FBB9004CA536 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08E88B951DE8FBB9004CA536 = {
+			isa = PBXGroup;
+			children = (
+				08E88BA01DE8FBB9004CA536 /* ZalandoWardrobe */,
+				08E88BB51DE8FBB9004CA536 /* ZalandoWardrobeTests */,
+				08E88BC01DE8FBB9004CA536 /* ZalandoWardrobeUITests */,
+				08E88B9F1DE8FBB9004CA536 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08E88B9F1DE8FBB9004CA536 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08E88B9E1DE8FBB9004CA536 /* ZalandoWardrobe.app */,
+				08E88BB21DE8FBB9004CA536 /* ZalandoWardrobeTests.xctest */,
+				08E88BBD1DE8FBB9004CA536 /* ZalandoWardrobeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08E88BA01DE8FBB9004CA536 /* ZalandoWardrobe */ = {
+			isa = PBXGroup;
+			children = (
+				08E88BA11DE8FBB9004CA536 /* AppDelegate.swift */,
+				08E88BA31DE8FBB9004CA536 /* ViewController.swift */,
+				08E88BA51DE8FBB9004CA536 /* Main.storyboard */,
+				08E88BA81DE8FBB9004CA536 /* Assets.xcassets */,
+				08E88BAA1DE8FBB9004CA536 /* LaunchScreen.storyboard */,
+				08E88BAD1DE8FBB9004CA536 /* Info.plist */,
+			);
+			path = ZalandoWardrobe;
+			sourceTree = "<group>";
+		};
+		08E88BB51DE8FBB9004CA536 /* ZalandoWardrobeTests */ = {
+			isa = PBXGroup;
+			children = (
+				08E88BB61DE8FBB9004CA536 /* ZalandoWardrobeTests.swift */,
+				08E88BB81DE8FBB9004CA536 /* Info.plist */,
+			);
+			path = ZalandoWardrobeTests;
+			sourceTree = "<group>";
+		};
+		08E88BC01DE8FBB9004CA536 /* ZalandoWardrobeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				08E88BC11DE8FBB9004CA536 /* ZalandoWardrobeUITests.swift */,
+				08E88BC31DE8FBB9004CA536 /* Info.plist */,
+			);
+			path = ZalandoWardrobeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08E88B9D1DE8FBB9004CA536 /* ZalandoWardrobe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08E88BC61DE8FBB9004CA536 /* Build configuration list for PBXNativeTarget "ZalandoWardrobe" */;
+			buildPhases = (
+				08E88B9A1DE8FBB9004CA536 /* Sources */,
+				08E88B9B1DE8FBB9004CA536 /* Frameworks */,
+				08E88B9C1DE8FBB9004CA536 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZalandoWardrobe;
+			productName = ZalandoWardrobe;
+			productReference = 08E88B9E1DE8FBB9004CA536 /* ZalandoWardrobe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08E88BB11DE8FBB9004CA536 /* ZalandoWardrobeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08E88BC91DE8FBB9004CA536 /* Build configuration list for PBXNativeTarget "ZalandoWardrobeTests" */;
+			buildPhases = (
+				08E88BAE1DE8FBB9004CA536 /* Sources */,
+				08E88BAF1DE8FBB9004CA536 /* Frameworks */,
+				08E88BB01DE8FBB9004CA536 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08E88BB41DE8FBB9004CA536 /* PBXTargetDependency */,
+			);
+			name = ZalandoWardrobeTests;
+			productName = ZalandoWardrobeTests;
+			productReference = 08E88BB21DE8FBB9004CA536 /* ZalandoWardrobeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08E88BBC1DE8FBB9004CA536 /* ZalandoWardrobeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08E88BCC1DE8FBB9004CA536 /* Build configuration list for PBXNativeTarget "ZalandoWardrobeUITests" */;
+			buildPhases = (
+				08E88BB91DE8FBB9004CA536 /* Sources */,
+				08E88BBA1DE8FBB9004CA536 /* Frameworks */,
+				08E88BBB1DE8FBB9004CA536 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08E88BBF1DE8FBB9004CA536 /* PBXTargetDependency */,
+			);
+			name = ZalandoWardrobeUITests;
+			productName = ZalandoWardrobeUITests;
+			productReference = 08E88BBD1DE8FBB9004CA536 /* ZalandoWardrobeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08E88B961DE8FBB9004CA536 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = AKarpov;
+				TargetAttributes = {
+					08E88B9D1DE8FBB9004CA536 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					08E88BB11DE8FBB9004CA536 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 08E88B9D1DE8FBB9004CA536;
+					};
+					08E88BBC1DE8FBB9004CA536 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 08E88B9D1DE8FBB9004CA536;
+					};
+				};
+			};
+			buildConfigurationList = 08E88B991DE8FBB9004CA536 /* Build configuration list for PBXProject "ZalandoWardrobe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08E88B951DE8FBB9004CA536;
+			productRefGroup = 08E88B9F1DE8FBB9004CA536 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08E88B9D1DE8FBB9004CA536 /* ZalandoWardrobe */,
+				08E88BB11DE8FBB9004CA536 /* ZalandoWardrobeTests */,
+				08E88BBC1DE8FBB9004CA536 /* ZalandoWardrobeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08E88B9C1DE8FBB9004CA536 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E88BAC1DE8FBB9004CA536 /* LaunchScreen.storyboard in Resources */,
+				08E88BA91DE8FBB9004CA536 /* Assets.xcassets in Resources */,
+				08E88BA71DE8FBB9004CA536 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E88BB01DE8FBB9004CA536 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E88BBB1DE8FBB9004CA536 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08E88B9A1DE8FBB9004CA536 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E88BA41DE8FBB9004CA536 /* ViewController.swift in Sources */,
+				08E88BA21DE8FBB9004CA536 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E88BAE1DE8FBB9004CA536 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E88BB71DE8FBB9004CA536 /* ZalandoWardrobeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08E88BB91DE8FBB9004CA536 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E88BC21DE8FBB9004CA536 /* ZalandoWardrobeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08E88BB41DE8FBB9004CA536 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08E88B9D1DE8FBB9004CA536 /* ZalandoWardrobe */;
+			targetProxy = 08E88BB31DE8FBB9004CA536 /* PBXContainerItemProxy */;
+		};
+		08E88BBF1DE8FBB9004CA536 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08E88B9D1DE8FBB9004CA536 /* ZalandoWardrobe */;
+			targetProxy = 08E88BBE1DE8FBB9004CA536 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08E88BA51DE8FBB9004CA536 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08E88BA61DE8FBB9004CA536 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08E88BAA1DE8FBB9004CA536 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08E88BAB1DE8FBB9004CA536 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08E88BC41DE8FBB9004CA536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08E88BC51DE8FBB9004CA536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08E88BC71DE8FBB9004CA536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZalandoWardrobe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexKarpov.ZalandoWardrobe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		08E88BC81DE8FBB9004CA536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZalandoWardrobe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexKarpov.ZalandoWardrobe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		08E88BCA1DE8FBB9004CA536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZalandoWardrobeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexKarpov.ZalandoWardrobeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZalandoWardrobe.app/ZalandoWardrobe";
+			};
+			name = Debug;
+		};
+		08E88BCB1DE8FBB9004CA536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZalandoWardrobeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexKarpov.ZalandoWardrobeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZalandoWardrobe.app/ZalandoWardrobe";
+			};
+			name = Release;
+		};
+		08E88BCD1DE8FBB9004CA536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ZalandoWardrobeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexKarpov.ZalandoWardrobeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ZalandoWardrobe;
+			};
+			name = Debug;
+		};
+		08E88BCE1DE8FBB9004CA536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ZalandoWardrobeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexKarpov.ZalandoWardrobeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ZalandoWardrobe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08E88B991DE8FBB9004CA536 /* Build configuration list for PBXProject "ZalandoWardrobe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E88BC41DE8FBB9004CA536 /* Debug */,
+				08E88BC51DE8FBB9004CA536 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08E88BC61DE8FBB9004CA536 /* Build configuration list for PBXNativeTarget "ZalandoWardrobe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E88BC71DE8FBB9004CA536 /* Debug */,
+				08E88BC81DE8FBB9004CA536 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		08E88BC91DE8FBB9004CA536 /* Build configuration list for PBXNativeTarget "ZalandoWardrobeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E88BCA1DE8FBB9004CA536 /* Debug */,
+				08E88BCB1DE8FBB9004CA536 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		08E88BCC1DE8FBB9004CA536 /* Build configuration list for PBXNativeTarget "ZalandoWardrobeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E88BCD1DE8FBB9004CA536 /* Debug */,
+				08E88BCE1DE8FBB9004CA536 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08E88B961DE8FBB9004CA536 /* Project object */;
+}
