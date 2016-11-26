@@ -12,12 +12,18 @@ import UIKit
 import ImagePicker
 
 class AddItemViewController: UITableViewController {
+    let colorReuseIdentifier = "colorReuseIdentifier"
+
     var itemImage: UIImage?
+    @IBOutlet weak var colorsCollectionView: UICollectionView!
     @IBOutlet weak var itemImageView: UIImageView!
     
     override func viewDidLoad() {
+       
         super.viewDidLoad()
         setupView()
+        //colorsCollectionView.delegate = self
+        colorsCollectionView.dataSource = self
     }
     
     private func setupView() {
@@ -27,6 +33,22 @@ class AddItemViewController: UITableViewController {
     
 }
 
+extension AddItemViewController : UICollectionViewDataSource {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = colorsCollectionView.dequeueReusableCell(withReuseIdentifier: colorReuseIdentifier,
+                                                                 for: indexPath) as! ColorCollectionViewCell
+        cell.backgroundColor = UIColor.red
+        return cell
+    }
+}
 
 //extension AddItemViewController : ImagePickerDelegate {
 //    func showImagePickerController() {
