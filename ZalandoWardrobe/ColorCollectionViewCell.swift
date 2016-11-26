@@ -10,5 +10,5 @@ import Foundation
 import UIKit
 
 class ColorCollectionViewCell : UICollectionViewCell {
-    
+    @IBOutlet weak var isSelectedImageView: UIImageView!
 }

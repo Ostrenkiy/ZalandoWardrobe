@@ -11,23 +11,46 @@ import Foundation
 import UIKit
 import ImagePicker
 
+class ColorItem {
+    private(set) var color:UIColor
+    var isSelected: Bool
+    
+    init(color:UIColor) {
+        self.color = color
+        self.isSelected = false
+    }
+}
+
 class AddItemViewController: UITableViewController {
     let colorReuseIdentifier = "colorReuseIdentifier"
 
     var itemImage: UIImage?
+    var colors: [ColorItem]?
+    
     @IBOutlet weak var colorsCollectionView: UICollectionView!
     @IBOutlet weak var itemImageView: UIImageView!
     
     override func viewDidLoad() {
        
         super.viewDidLoad()
-        setupView()
-        //colorsCollectionView.delegate = self
+        colorsCollectionView.delegate = self
         colorsCollectionView.dataSource = self
+        
+        self.colors = [UIColor.red, UIColor.black, UIColor.blue].map {ColorItem(color: $0)}
+        setupColorsSet()
+        setupView()
     }
     
     private func setupView() {
         self.itemImageView.image = itemImage
+        // вроде ни разу не правильно, тип не в центр кидает
+        
+        let collectionViewWidth = self.colorsCollectionView.frame.width
+        self.colorsCollectionView.setContentOffset(CGPoint(x: collectionViewWidth / 2, y: 0), animated: false)
+    }
+    
+    private func setupColorsSet() {
+        self.colors = (IttenColors + DefaultColors).map{ ColorItem(color: $0)}
     }
     
     
@@ -39,36 +62,34 @@ extension AddItemViewController : UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return colors?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = colorsCollectionView.dequeueReusableCell(withReuseIdentifier: colorReuseIdentifier,
                                                                  for: indexPath) as! ColorCollectionViewCell
-        cell.backgroundColor = UIColor.red
+        if let colorItem = self.colors?[indexPath.row] {
+            cell.backgroundColor = colorItem.color
+            cell.isSelectedImageView.backgroundColor = colorItem.isSelected ? UIColor.green : UIColor.clear
+            cell.layer.cornerRadius = cell.frame.height / 2
+            cell.layer.masksToBounds = true
+        }
+        
         return cell
     }
 }
 
-//extension AddItemViewController : ImagePickerDelegate {
-//    func showImagePickerController() {
-//        let imagePickerController = ImagePickerController()
-//        imagePickerController.imageLimit = 1
-//        imagePickerController.delegate = self
-//        present(imagePickerController, animated: true, completion: nil)
-//    }
-//    
-//    func wrapperDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
-//        print("3")
-//        
-//    }
-//    func doneButtonDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
-//        print("2")
-//        
-//    }
-//    func cancelButtonDidPress(_ imagePicker: ImagePickerController) {
-//        print("1")
-//    }
-//
-//}
+extension AddItemViewController : UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let colorItem = self.colors?[indexPath.row] {
+            colorItem.isSelected = !colorItem.isSelected
+            let cell = colorsCollectionView.cellForItem(at: indexPath) as! ColorCollectionViewCell
+            UIView.animate(withDuration: 0.5, animations: {                
+                //implement custom animation
+                
+                cell.isSelectedImageView.backgroundColor = colorItem.isSelected ? UIColor.green : UIColor.clear
 
+            })
+        }
+    }
+}
