@@ -27,7 +27,7 @@ class AddItemViewController: UITableViewController {
     var itemImage: UIImage?
     var colors: [ColorItem]?
     var selectedClothingType: String?
-    
+
     @IBOutlet weak var colorsCollectionView: UICollectionView!
     @IBOutlet weak var itemImageView: UIImageView!
     @IBOutlet weak var selectItemTypeView: UIView!
