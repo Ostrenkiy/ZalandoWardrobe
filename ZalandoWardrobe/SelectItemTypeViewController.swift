@@ -13,8 +13,8 @@ class SelectItemTypeViewController: UIViewController, UIPickerViewDelegate, UIPi
     @IBOutlet weak var pickerView: UIPickerView!
     
     private let clothes =  Clothes.getAllClothes()
-    private lazy var clothesTypeArray = Array(Clothes.getAllClothes().keys)
-    private var selectedClothingType:String = "Sport"
+    private lazy var clothingSectionsArray = Array(Clothes.getAllClothes().keys)
+    private var selectedClothingSection:String = "Hats"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +24,10 @@ class SelectItemTypeViewController: UIViewController, UIPickerViewDelegate, UIPi
         // Do any additional setup after loading the view.
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        (self.parent as! AddItemViewController).selectedClothingType = clothes[selectedClothingSection]![0]
+    }
     
     private func setupView() {
         
@@ -33,16 +37,16 @@ class SelectItemTypeViewController: UIViewController, UIPickerViewDelegate, UIPi
         case 0:
             return clothes.keys.count
         default:
-            return clothes[selectedClothingType]!.count
+            return clothes[selectedClothingSection]!.count
         }
     }
 
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         switch component {
         case 0:
-            return clothesTypeArray[row]
+            return clothingSectionsArray[row]
         default:
-            return clothes[selectedClothingType]![row].readableName
+            return clothes[selectedClothingSection]![row].readableName
         }
     }
     
@@ -53,11 +57,11 @@ class SelectItemTypeViewController: UIViewController, UIPickerViewDelegate, UIPi
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         switch component {
         case 0:
-            selectedClothingType = clothesTypeArray[row]
+            selectedClothingSection = clothingSectionsArray[row]
             pickerView.reloadComponent(1)
         default:
-            print(clothes[selectedClothingType]![row].serverName)
-            (self.parent as! AddItemViewController).selectedClothingType = clothes[selectedClothingType]![row].serverName
+            print(clothes[selectedClothingSection]![row].serverName)
+            (self.parent as! AddItemViewController).selectedClothingType = clothes[selectedClothingSection]![row]
         }
     }
 }

@@ -26,7 +26,8 @@ class AddItemViewController: UITableViewController {
 
     var itemImage: UIImage?
     var colors: [ColorItem]?
-    var selectedClothingType: String?
+    var selectedClothingType: ClothingType?
+    var completionBlock: ((NewClothingItem) -> Void)?
 
     @IBOutlet weak var colorsCollectionView: UICollectionView!
     @IBOutlet weak var itemImageView: UIImageView!
@@ -62,8 +63,8 @@ class AddItemViewController: UITableViewController {
         let colorsSelected = colors!
             .filter{$0.isSelected}
             .map{$0.color}
-        let itemType = selectedClothingType!
-        print(colorsSelected, itemType)
+        self.completionBlock?(NewClothingItem(colors: colorsSelected, image: itemImage!, clothingType: selectedClothingType!))
+        self.navigationController?.popViewController(animated: true)
     }
 }
 

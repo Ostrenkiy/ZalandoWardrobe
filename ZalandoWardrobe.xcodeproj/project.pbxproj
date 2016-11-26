@@ -45,6 +45,7 @@
 		08E88BFE1DE9080F004CA536 /* UIImage+Mask.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BED1DE9080F004CA536 /* UIImage+Mask.m */; };
 		08E88BFF1DE9080F004CA536 /* UIImage+Pixels.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BEF1DE9080F004CA536 /* UIImage+Pixels.m */; };
 		08E88C001DE9080F004CA536 /* UIImage+TBTint.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BF11DE9080F004CA536 /* UIImage+TBTint.m */; };
+		364681231DE9ECDE0007AFB0 /* NewClothingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364681221DE9ECDE0007AFB0 /* NewClothingItem.swift */; };
 		3656C5D71DE908C3007B691A /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3656C5D61DE908C3007B691A /* AddItemViewController.swift */; };
 		3656C5D91DE9821A007B691A /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3656C5D81DE9821A007B691A /* ColorCollectionViewCell.swift */; };
 		3656C5DB1DE9C57B007B691A /* SelectItemTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3656C5DA1DE9C57B007B691A /* SelectItemTypeViewController.swift */; };
@@ -134,6 +135,7 @@
 		08E88BF11DE9080F004CA536 /* UIImage+TBTint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TBTint.m"; sourceTree = "<group>"; };
 		08E88BF21DE9080F004CA536 /* Colors-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Colors-Prefix.pch"; sourceTree = "<group>"; };
 		3271D3F52B6E963AEBB17A5D /* Pods_ZalandoWardrobe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZalandoWardrobe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		364681221DE9ECDE0007AFB0 /* NewClothingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewClothingItem.swift; sourceTree = "<group>"; };
 		3656C5D61DE908C3007B691A /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		3656C5D81DE9821A007B691A /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		3656C5DA1DE9C57B007B691A /* SelectItemTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectItemTypeViewController.swift; sourceTree = "<group>"; };
@@ -209,10 +211,9 @@
 		0811AB031DE999AD00473651 /* My Clothes */ = {
 			isa = PBXGroup;
 			children = (
+				364681241DE9ED800007AFB0 /* AddItem */,
 				0811AB001DE998D800473651 /* MyClothes.storyboard */,
-				3656C5DA1DE9C57B007B691A /* SelectItemTypeViewController.swift */,
 				0811AB041DE99A1F00473651 /* MyClothesViewController.swift */,
-				3656C5D61DE908C3007B691A /* AddItemViewController.swift */,
 			);
 			name = "My Clothes";
 			sourceTree = "<group>";
@@ -238,8 +239,10 @@
 		08E2B1EE1DE9A7D9008CAE7C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0811AAFD1DE981C700473651 /* Clothing Types */,
 				08E2B1EF1DE9A7E4008CAE7C /* ClothingItem.swift */,
 				08E2B1F51DE9B5A9008CAE7C /* ItemSet.swift */,
+				364681221DE9ECDE0007AFB0 /* NewClothingItem.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -282,7 +285,6 @@
 				08E88BAD1DE8FBB9004CA536 /* Info.plist */,
 				08E88BD41DE9080E004CA536 /* ZalandoWardrobe-Bridging-Header.h */,
 				0811AAF91DE97ECB00473651 /* UIImageExtension.swift */,
-				0811AAFD1DE981C700473651 /* Clothing Types */,
 			);
 			path = ZalandoWardrobe;
 			sourceTree = "<group>";
@@ -374,6 +376,15 @@
 				08D140C11DE9D4D5000CB07D /* KBButton.swift */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		364681241DE9ED800007AFB0 /* AddItem */ = {
+			isa = PBXGroup;
+			children = (
+				3656C5DA1DE9C57B007B691A /* SelectItemTypeViewController.swift */,
+				3656C5D61DE908C3007B691A /* AddItemViewController.swift */,
+			);
+			name = AddItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -662,6 +673,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08E88BFE1DE9080F004CA536 /* UIImage+Mask.m in Sources */,
+				364681231DE9ECDE0007AFB0 /* NewClothingItem.swift in Sources */,
 				3656C5DD1DE9D28A007B691A /* ClothingType.swift in Sources */,
 				0811AAFA1DE97ECB00473651 /* UIImageExtension.swift in Sources */,
 				0811AAFC1DE981C200473651 /* ClothingTypes.swift in Sources */,

@@ -16,7 +16,7 @@ protocol EnumListable {
     static var allRawValues : [String] { get }
 }
 
-class ClothingType {
+class OldClothingType {
     enum mensShoes : String, NamedReadable, EnumListable {
         case boots = "mens-shoes-boots"
         case flatShoes = "mens-shoes-flat-shoes"
