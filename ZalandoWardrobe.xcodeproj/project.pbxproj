@@ -15,6 +15,7 @@
 		08E88BB71DE8FBB9004CA536 /* ZalandoWardrobeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BB61DE8FBB9004CA536 /* ZalandoWardrobeTests.swift */; };
 		08E88BC21DE8FBB9004CA536 /* ZalandoWardrobeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BC11DE8FBB9004CA536 /* ZalandoWardrobeUITests.swift */; };
 		3656C5D71DE908C3007B691A /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3656C5D61DE908C3007B691A /* AddItemViewController.swift */; };
+		3656C5D91DE9821A007B691A /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3656C5D81DE9821A007B691A /* ColorCollectionViewCell.swift */; };
 		7D65F9B77701073B4CAAD03E /* Pods_ZalandoWardrobeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB56BD505C52D187DCAC5927 /* Pods_ZalandoWardrobeTests.framework */; };
 		9CB0C0D745EECFA1E0C6BEFD /* Pods_ZalandoWardrobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3271D3F52B6E963AEBB17A5D /* Pods_ZalandoWardrobe.framework */; };
 		C7730E93A8F2E96B143A3782 /* Pods_ZalandoWardrobeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E630DEDD05C48604FD73216 /* Pods_ZalandoWardrobeUITests.framework */; };
@@ -53,6 +54,7 @@
 		08E88BC31DE8FBB9004CA536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3271D3F52B6E963AEBB17A5D /* Pods_ZalandoWardrobe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZalandoWardrobe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3656C5D61DE908C3007B691A /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		3656C5D81DE9821A007B691A /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		524E402C36A923691C466E53 /* Pods-ZalandoWardrobeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZalandoWardrobeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZalandoWardrobeUITests/Pods-ZalandoWardrobeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6E630DEDD05C48604FD73216 /* Pods_ZalandoWardrobeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZalandoWardrobeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8742B39F4916DCECE750DB38 /* Pods-ZalandoWardrobeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZalandoWardrobeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZalandoWardrobeTests/Pods-ZalandoWardrobeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				08E88BA11DE8FBB9004CA536 /* AppDelegate.swift */,
 				08E88BA31DE8FBB9004CA536 /* ViewController.swift */,
 				08E88BA51DE8FBB9004CA536 /* Main.storyboard */,
+				3656C5D81DE9821A007B691A /* ColorCollectionViewCell.swift */,
 				3656C5D61DE908C3007B691A /* AddItemViewController.swift */,
 				08E88BA81DE8FBB9004CA536 /* Assets.xcassets */,
 				08E88BAA1DE8FBB9004CA536 /* LaunchScreen.storyboard */,
@@ -245,7 +248,6 @@
 				TargetAttributes = {
 					08E88B9D1DE8FBB9004CA536 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 8CAP6SYJTB;
 						ProvisioningStyle = Automatic;
 					};
 					08E88BB11DE8FBB9004CA536 = {
@@ -452,6 +454,7 @@
 			files = (
 				08E88BA41DE8FBB9004CA536 /* ViewController.swift in Sources */,
 				08E88BA21DE8FBB9004CA536 /* AppDelegate.swift in Sources */,
+				3656C5D91DE9821A007B691A /* ColorCollectionViewCell.swift in Sources */,
 				3656C5D71DE908C3007B691A /* AddItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,7 +608,7 @@
 			baseConfigurationReference = C4B3C0E3FF2E2332468A3F39 /* Pods-ZalandoWardrobe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8CAP6SYJTB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ZalandoWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexKarpov.ZalandoWardrobe;
@@ -619,7 +622,7 @@
 			baseConfigurationReference = DA02A9E3AC082943694D624F /* Pods-ZalandoWardrobe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8CAP6SYJTB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ZalandoWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexKarpov.ZalandoWardrobe;
