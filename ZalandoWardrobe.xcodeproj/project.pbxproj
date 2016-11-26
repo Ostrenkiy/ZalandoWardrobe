@@ -47,6 +47,8 @@
 		08E88BFF1DE9080F004CA536 /* UIImage+Pixels.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BEF1DE9080F004CA536 /* UIImage+Pixels.m */; };
 		08E88C001DE9080F004CA536 /* UIImage+TBTint.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BF11DE9080F004CA536 /* UIImage+TBTint.m */; };
 		364681231DE9ECDE0007AFB0 /* NewClothingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364681221DE9ECDE0007AFB0 /* NewClothingItem.swift */; };
+		3646812B1DEA148C0007AFB0 /* CCColorCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 364681281DEA148C0007AFB0 /* CCColorCube.m */; };
+		3646812C1DEA148C0007AFB0 /* CCLocalMaximum.m in Sources */ = {isa = PBXBuildFile; fileRef = 3646812A1DEA148C0007AFB0 /* CCLocalMaximum.m */; };
 		3656C5D71DE908C3007B691A /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3656C5D61DE908C3007B691A /* AddItemViewController.swift */; };
 		3656C5D91DE9821A007B691A /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3656C5D81DE9821A007B691A /* ColorCollectionViewCell.swift */; };
 		3656C5DB1DE9C57B007B691A /* SelectItemTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3656C5DA1DE9C57B007B691A /* SelectItemTypeViewController.swift */; };
@@ -138,6 +140,10 @@
 		08E88BF21DE9080F004CA536 /* Colors-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Colors-Prefix.pch"; sourceTree = "<group>"; };
 		3271D3F52B6E963AEBB17A5D /* Pods_ZalandoWardrobe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZalandoWardrobe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		364681221DE9ECDE0007AFB0 /* NewClothingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewClothingItem.swift; sourceTree = "<group>"; };
+		364681271DEA148C0007AFB0 /* CCColorCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCColorCube.h; sourceTree = "<group>"; };
+		364681281DEA148C0007AFB0 /* CCColorCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCColorCube.m; sourceTree = "<group>"; };
+		364681291DEA148C0007AFB0 /* CCLocalMaximum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLocalMaximum.h; sourceTree = "<group>"; };
+		3646812A1DEA148C0007AFB0 /* CCLocalMaximum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLocalMaximum.m; sourceTree = "<group>"; };
 		3656C5D61DE908C3007B691A /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		3656C5D81DE9821A007B691A /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		3656C5DA1DE9C57B007B691A /* SelectItemTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectItemTypeViewController.swift; sourceTree = "<group>"; };
@@ -313,6 +319,7 @@
 		08E88BCF1DE90059004CA536 /* Color Recognition */ = {
 			isa = PBXGroup;
 			children = (
+				364681261DEA146B0007AFB0 /* ColorCube */,
 				08E88BD01DE90074004CA536 /* ColorRecognizer.swift */,
 				08E88BD21DE900AB004CA536 /* ColorShader.swift */,
 			);
@@ -388,6 +395,17 @@
 				3656C5D61DE908C3007B691A /* AddItemViewController.swift */,
 			);
 			name = AddItem;
+			sourceTree = "<group>";
+		};
+		364681261DEA146B0007AFB0 /* ColorCube */ = {
+			isa = PBXGroup;
+			children = (
+				364681271DEA148C0007AFB0 /* CCColorCube.h */,
+				364681281DEA148C0007AFB0 /* CCColorCube.m */,
+				364681291DEA148C0007AFB0 /* CCLocalMaximum.h */,
+				3646812A1DEA148C0007AFB0 /* CCLocalMaximum.m */,
+			);
+			name = ColorCube;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -675,6 +693,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3646812B1DEA148C0007AFB0 /* CCColorCube.m in Sources */,
 				08E88BFE1DE9080F004CA536 /* UIImage+Mask.m in Sources */,
 				364681231DE9ECDE0007AFB0 /* NewClothingItem.swift in Sources */,
 				3656C5DD1DE9D28A007B691A /* ClothingType.swift in Sources */,
@@ -694,6 +713,7 @@
 				08E88BFF1DE9080F004CA536 /* UIImage+Pixels.m in Sources */,
 				08E2B1F01DE9A7E4008CAE7C /* ClothingItem.swift in Sources */,
 				08E88BD31DE900AB004CA536 /* ColorShader.swift in Sources */,
+				3646812C1DEA148C0007AFB0 /* CCLocalMaximum.m in Sources */,
 				08E88BA21DE8FBB9004CA536 /* AppDelegate.swift in Sources */,
 				3656C5D91DE9821A007B691A /* ColorCollectionViewCell.swift in Sources */,
 				08E2B1F41DE9B2D5008CAE7C /* RecommendationsContainerViewController.swift in Sources */,

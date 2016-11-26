@@ -3,4 +3,5 @@
 //
 
 #import "Colors.h"
+#import "CCColorCube.h"
 //#import "EDColor.h"
