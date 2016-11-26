@@ -13,5 +13,5 @@ import Alamofire
  Add distinct static let API endpoint classes here
  */
 class APIDataDownloader {
-    
+    static let media = MediaAPI()
 }
