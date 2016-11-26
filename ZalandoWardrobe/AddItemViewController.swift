@@ -26,9 +26,11 @@ class AddItemViewController: UITableViewController {
 
     var itemImage: UIImage?
     var colors: [ColorItem]?
+    var selectedClothingType: String?
     
     @IBOutlet weak var colorsCollectionView: UICollectionView!
     @IBOutlet weak var itemImageView: UIImageView!
+    @IBOutlet weak var selectItemTypeView: UIView!
     
     override func viewDidLoad() {
        
@@ -47,13 +49,22 @@ class AddItemViewController: UITableViewController {
         
         let collectionViewWidth = self.colorsCollectionView.frame.width
         self.colorsCollectionView.setContentOffset(CGPoint(x: collectionViewWidth / 2, y: 0), animated: false)
+        
+        let item = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(AddItemViewController.addItem))
+        navigationItem.rightBarButtonItem = item
     }
     
     private func setupColorsSet() {
         self.colors = (IttenColors + DefaultColors).map{ ColorItem(color: $0)}
     }
     
-    
+    func addItem() {
+        let colorsSelected = colors!
+            .filter{$0.isSelected}
+            .map{$0.color}
+        let itemType = selectedClothingType!
+        print(colorsSelected, itemType)
+    }
 }
 
 extension AddItemViewController : UICollectionViewDataSource {
@@ -79,7 +90,7 @@ extension AddItemViewController : UICollectionViewDataSource {
     }
 }
 
-extension AddItemViewController : UICollectionViewDelegate {
+extension AddItemViewController : UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let colorItem = self.colors?[indexPath.row] {
             colorItem.isSelected = !colorItem.isSelected
@@ -92,4 +103,10 @@ extension AddItemViewController : UICollectionViewDelegate {
             })
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsetsMake(0, 40, 0, 40)
+    }
+    
 }
+

@@ -9,7 +9,7 @@ target 'ZalandoWardrobe' do
   pod 'SwiftyJSON'
   pod 'ImagePicker'
   pod "EDColor"
-
+  pod 'SnapKit'
   # Pods for ZalandoWardrobe
 
   target 'ZalandoWardrobeTests' do
