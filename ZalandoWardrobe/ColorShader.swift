@@ -65,6 +65,10 @@ class ColorShades: NSObject {
     var colorSetAndAdditional : NSSet {
         return NSSet(array: getAllColors() + DefaultColors)
     }
+    
+    var colorsSet : NSSet {
+        return NSSet(array: IttenColors + DefaultColors)
+    }
 }
 
 let IttenColors : [UIColor] = [
