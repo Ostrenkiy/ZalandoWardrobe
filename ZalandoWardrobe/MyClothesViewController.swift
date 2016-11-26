@@ -11,12 +11,10 @@ import ImagePicker
 
 class MyClothesViewController: UIViewController {
     
-
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var items : [NewClothingItem] = []
+    var items : [ClothingItem] = []
     var index : Int = 0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +24,29 @@ class MyClothesViewController: UIViewController {
         collectionView.register(UINib(nibName: "ClothingItemCollectionViewCell", bundle: nil) , forCellWithReuseIdentifier: "ClothingItemCollectionViewCell")
         collectionView.delegate = self
         collectionView.dataSource = self
-
+        
+        let rc = UIRefreshControl()
+        rc.addTarget(self, action: #selector(MyClothesViewController.refreshClothes), for: UIControlEvents.valueChanged)
+        collectionView.refreshControl = rc
+        collectionView.refreshControl?.beginRefreshing()
+        refreshClothes()
     }
     
     @IBAction func addItem(_ sender: Any) {
         showImagePickerController()
+    }
+    
+    func refreshClothes() {
+        APIDataDownloader.clothes.retrieve(success: {
+            [weak self]
+            newItems in
+            self?.items = newItems
+            self?.collectionView.reloadData()
+            self?.collectionView.refreshControl?.endRefreshing()
+        }, error: {
+            errorMsg in
+            print(errorMsg)
+        })
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -92,7 +108,7 @@ extension MyClothesViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ClothingItemCollectionViewCell", for: indexPath) as! ClothingItemCollectionViewCell
         
         let i = items[indexPath.item]
-        cell.initWithNewClothingItem(clothingItem: i)
+        cell.initWithItem(clothingItem: i)
         return cell
     }
     

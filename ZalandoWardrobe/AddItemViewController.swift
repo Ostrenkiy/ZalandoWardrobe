@@ -27,7 +27,7 @@ class AddItemViewController: UITableViewController {
     var itemImage: UIImage?
     var colors: [ColorItem]?
     var selectedClothingType: ClothingType?
-    var completionBlock: ((NewClothingItem) -> Void)?
+    var completionBlock: ((ClothingItem) -> Void)?
 
     @IBOutlet weak var colorsCollectionView: UICollectionView!
     @IBOutlet weak var itemImageView: UIImageView!
@@ -77,8 +77,22 @@ class AddItemViewController: UITableViewController {
         let colorsSelected = colors!
             .filter{$0.isSelected}
             .map{$0.color}
-        self.completionBlock?(NewClothingItem(colors: colorsSelected, image: itemImage!, clothingType: selectedClothingType!))
-        self.navigationController?.popViewController(animated: true)
+        APIDataDownloader.media.create(image: itemImage!, success: {
+            [weak self]
+            hash in
+            APIDataDownloader.clothes.create(hash: hash, category: self!.selectedClothingType!.serverName, colors: colorsSelected, image: self!.itemImage!, success: {
+                [weak self]
+                item in
+                self?.completionBlock?(item)
+                _ = self?.navigationController?.popViewController(animated: true)
+            }, error: {
+                errorMsg in
+                print(errorMsg)
+            })
+        }, error: {
+            errorMsg in
+            print(errorMsg)
+        })
     }
 }
 
