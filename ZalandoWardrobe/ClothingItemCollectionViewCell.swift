@@ -25,4 +25,9 @@ class ClothingItemCollectionViewCell: UICollectionViewCell {
             zalandoButton.isHidden = true
         }
     }
+    
+    func initWithNewClothingItem(clothingItem: NewClothingItem) {
+        itemImageView.image = clothingItem.image
+        zalandoButton.isHidden = true
+    }
 }

@@ -10,11 +10,23 @@ import UIKit
 import ImagePicker
 
 class MyClothesViewController: UIViewController {
+    
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var items : [NewClothingItem] = []
+    var index : Int = 0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let item = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(MyClothesViewController.addItem(_:)))
         navigationItem.rightBarButtonItem = item
+        
+        collectionView.register(UINib(nibName: "ClothingItemCollectionViewCell", bundle: nil) , forCellWithReuseIdentifier: "ClothingItemCollectionViewCell")
+        collectionView.delegate = self
+        collectionView.dataSource = self
+
     }
     
     @IBAction func addItem(_ sender: Any) {
@@ -28,6 +40,11 @@ class MyClothesViewController: UIViewController {
                 return
             }
             addItemVC.itemImage = image
+            addItemVC.completionBlock = ({[weak self] newItem in
+                self?.items.append(newItem)
+                self?.collectionView.reloadData()
+                print(newItem)
+            })
         default:
             return
         }
@@ -55,4 +72,30 @@ extension MyClothesViewController : ImagePickerDelegate {
     func cancelButtonDidPress(_ imagePicker: ImagePickerController) {
     }
 }
+
+
+extension MyClothesViewController: UICollectionViewDelegate {
+    
+}
+
+extension MyClothesViewController: UICollectionViewDataSource {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ClothingItemCollectionViewCell", for: indexPath) as! ClothingItemCollectionViewCell
+        
+        let i = items[indexPath.item]
+        cell.initWithNewClothingItem(clothingItem: i)
+        return cell
+    }
+    
+}
+
 
