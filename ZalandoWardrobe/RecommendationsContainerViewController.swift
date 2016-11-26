@@ -58,7 +58,7 @@ class RecommendationsContainerViewController: UIViewController {
         pageControl?.alignCenterX(withView: self.view, predicate: "0")
         pageControl?.pageIndicatorTintColor = UIColor.lightGray
         pageControl?.currentPageIndicatorTintColor = UIColor.black
-        pageControl?.backgroundColor = UIColor.white
+        pageControl?.backgroundColor = UIColor.clear
         pageControl?.numberOfPages = sets.count
         pageControl?.currentPage = 0
     }

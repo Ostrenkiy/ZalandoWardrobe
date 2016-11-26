@@ -23,9 +23,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ez7-7j-BNx">
-                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kPy-Ue-IAW">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="kPy-Ue-IAW">
                                     <size key="itemSize" width="150" height="200"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -36,10 +36,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="Ez7-7j-BNx" secondAttribute="leading" id="AWG-MJ-R1E"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ez7-7j-BNx" secondAttribute="trailing" id="EKC-VQ-gmG"/>
-                            <constraint firstItem="ddg-AM-XW8" firstAttribute="top" secondItem="Ez7-7j-BNx" secondAttribute="bottom" id="NeP-X3-R0v"/>
-                            <constraint firstItem="Ez7-7j-BNx" firstAttribute="top" secondItem="lA5-h2-kOo" secondAttribute="bottom" id="foD-o2-uGV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ez7-7j-BNx" secondAttribute="trailing" constant="-16" id="3PL-XG-p9k"/>
+                            <constraint firstItem="ddg-AM-XW8" firstAttribute="top" secondItem="Ez7-7j-BNx" secondAttribute="bottom" id="GVk-nI-eCe"/>
+                            <constraint firstItem="Ez7-7j-BNx" firstAttribute="top" secondItem="lA5-h2-kOo" secondAttribute="bottom" constant="-20" id="Q6w-Zw-3gd"/>
+                            <constraint firstItem="Ez7-7j-BNx" firstAttribute="leading" secondItem="GJA-k7-t5j" secondAttribute="leadingMargin" constant="-16" id="xoU-t6-Zu0"/>
                         </constraints>
                     </view>
                     <connections>

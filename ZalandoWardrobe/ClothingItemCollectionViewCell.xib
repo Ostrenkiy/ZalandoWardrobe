@@ -12,46 +12,73 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ClothingItemCollectionViewCell" id="gTV-IL-0wX" customClass="ClothingItemCollectionViewCell" customModule="ZalandoWardrobe" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="121" height="183"/>
+            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="121" height="183"/>
+                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZuP-hY-L7c">
-                        <rect key="frame" x="0.0" y="0.0" width="121" height="183"/>
+                        <rect key="frame" x="10" y="10" width="130" height="180"/>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szu-y9-Ajc">
-                        <rect key="frame" x="40" y="135" width="40" height="40"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j65-1s-56U">
+                        <rect key="frame" x="10" y="140" width="130" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timberland" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Kh-6s-IAp">
+                                <rect key="frame" x="8" y="5" width="86" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jacket" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeD-fW-bGk">
+                                <rect key="frame" x="6" y="24" width="86" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szu-y9-Ajc">
+                                <rect key="frame" x="82" y="5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="7zM-cc-MAz"/>
+                                    <constraint firstAttribute="height" constant="40" id="Ne0-7Y-8qn"/>
+                                </constraints>
+                                <state key="normal" image="Buy">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected" image="Buy"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="0.81999999999999995" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="40" id="VoG-Ga-sQ5"/>
-                            <constraint firstAttribute="width" constant="40" id="uqR-vm-vvP"/>
+                            <constraint firstAttribute="trailing" secondItem="szu-y9-Ajc" secondAttribute="trailing" constant="8" id="q91-5f-cRu"/>
+                            <constraint firstItem="szu-y9-Ajc" firstAttribute="centerY" secondItem="j65-1s-56U" secondAttribute="centerY" id="usR-YU-AOL"/>
+                            <constraint firstAttribute="height" constant="50" id="vKf-fm-4ew"/>
                         </constraints>
-                        <state key="normal" image="Buy">
-                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </state>
-                        <state key="selected" image="Buy selected"/>
-                    </button>
+                    </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="ZuP-hY-L7c" secondAttribute="trailing" id="9aa-xL-GPP"/>
-                <constraint firstItem="ZuP-hY-L7c" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MUB-hy-z0u"/>
-                <constraint firstItem="ZuP-hY-L7c" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bfd-EA-FPd"/>
-                <constraint firstItem="szu-y9-Ajc" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ctD-r4-UpS"/>
-                <constraint firstAttribute="bottom" secondItem="ZuP-hY-L7c" secondAttribute="bottom" id="wqs-uq-wRU"/>
-                <constraint firstAttribute="bottom" secondItem="szu-y9-Ajc" secondAttribute="bottom" constant="8" id="xuR-vG-nPU"/>
+                <constraint firstAttribute="trailing" secondItem="ZuP-hY-L7c" secondAttribute="trailing" constant="10" id="9aa-xL-GPP"/>
+                <constraint firstItem="j65-1s-56U" firstAttribute="bottom" secondItem="ZuP-hY-L7c" secondAttribute="bottom" id="A4R-mF-DI2"/>
+                <constraint firstItem="ZuP-hY-L7c" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="MUB-hy-z0u"/>
+                <constraint firstItem="j65-1s-56U" firstAttribute="trailing" secondItem="ZuP-hY-L7c" secondAttribute="trailing" id="X2D-XA-4qX"/>
+                <constraint firstItem="ZuP-hY-L7c" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="bfd-EA-FPd"/>
+                <constraint firstItem="j65-1s-56U" firstAttribute="leading" secondItem="ZuP-hY-L7c" secondAttribute="leading" id="i5m-hY-MjB"/>
+                <constraint firstAttribute="bottom" secondItem="ZuP-hY-L7c" secondAttribute="bottom" constant="10" id="wqs-uq-wRU"/>
             </constraints>
             <size key="customSize" width="121" height="183"/>
             <connections>
                 <outlet property="itemImageView" destination="ZuP-hY-L7c" id="waO-j4-fGC"/>
+                <outlet property="subtitleLabel" destination="AeD-fW-bGk" id="b1E-hL-pNR"/>
+                <outlet property="titleLabel" destination="0Kh-6s-IAp" id="x43-Tp-u91"/>
                 <outlet property="zalandoButton" destination="szu-y9-Ajc" id="sfb-uR-UWp"/>
             </connections>
-            <point key="canvasLocation" x="69.5" y="58.5"/>
+            <point key="canvasLocation" x="69" y="58"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Buy" width="742" height="734"/>
-        <image name="Buy selected" width="716" height="702"/>
+        <image name="Buy" width="100" height="100"/>
     </resources>
 </document>

@@ -78,7 +78,7 @@ extension MyClothesViewController: UICollectionViewDelegate {
     
 }
 
-extension MyClothesViewController: UICollectionViewDataSource {
+extension MyClothesViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -94,6 +94,13 @@ extension MyClothesViewController: UICollectionViewDataSource {
         let i = items[indexPath.item]
         cell.initWithNewClothingItem(clothingItem: i)
         return cell
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let viewWidth =  collectionView.frame.size.width
+        let viewHeight = collectionView.frame.size.height
+        return CGSize(width: viewWidth / 2, height: viewHeight / 2)
     }
     
 }

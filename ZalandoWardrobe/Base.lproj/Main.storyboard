@@ -25,7 +25,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ywX-qQ-FMs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.92156862745098034" green="0.66274509803921566" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -62,7 +61,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Recommendations" id="uZP-Hr-blv">
-                        <barButtonItem key="leftBarButtonItem" title="My clothes" id="KHk-Lo-Vjz">
+                        <barButtonItem key="rightBarButtonItem" image="wardrobe-bar" id="KHk-Lo-Vjz">
                             <connections>
                                 <segue destination="sap-aH-uvB" kind="show" id="Lpd-om-yym"/>
                             </connections>
@@ -112,9 +111,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GXt-qw-dkN">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ukn-ut-ZoS">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ukn-ut-ZoS">
                                     <size key="itemSize" width="150" height="200"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -127,7 +126,7 @@
                         <constraints>
                             <constraint firstItem="GXt-qw-dkN" firstAttribute="top" secondItem="T54-gU-VKy" secondAttribute="top" id="Bhl-wU-iZP"/>
                             <constraint firstItem="GXt-qw-dkN" firstAttribute="leading" secondItem="T54-gU-VKy" secondAttribute="leading" id="iH6-pD-iet"/>
-                            <constraint firstItem="TV4-Z2-MbT" firstAttribute="top" secondItem="GXt-qw-dkN" secondAttribute="bottom" id="idd-AH-fel"/>
+                            <constraint firstItem="TV4-Z2-MbT" firstAttribute="top" secondItem="GXt-qw-dkN" secondAttribute="bottom" constant="50" id="idd-AH-fel"/>
                             <constraint firstAttribute="trailing" secondItem="GXt-qw-dkN" secondAttribute="trailing" id="qE2-9J-y9u"/>
                         </constraints>
                     </view>
@@ -140,4 +139,7 @@
             <point key="canvasLocation" x="3058" y="1133"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="wardrobe-bar" width="34" height="20"/>
+    </resources>
 </document>

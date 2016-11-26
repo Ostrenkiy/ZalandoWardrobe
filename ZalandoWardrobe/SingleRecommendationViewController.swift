@@ -40,7 +40,16 @@ class SingleRecommendationViewController: UIViewController {
 
 }
 
-extension SingleRecommendationViewController: UICollectionViewDelegate {
+extension SingleRecommendationViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        let cell = 
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let viewWidth =  collectionView.frame.size.width
+        let viewHeight = collectionView.frame.size.height
+        return CGSize(width: viewWidth / 2, height: viewHeight / 2)
+    }
     
 }
 
@@ -61,5 +70,5 @@ extension SingleRecommendationViewController: UICollectionViewDataSource {
         cell.initWithItem(clothingItem: i)
         return cell
     }
-    
 }
+
