@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MyClothesViewController.swift
 //  ZalandoWardrobe
 //
 //  Created by Alexander Karpov on 26.11.16.
@@ -9,9 +9,12 @@
 import UIKit
 import ImagePicker
 
-class ViewController: UIViewController {    
+class MyClothesViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        let item = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(MyClothesViewController.addItem(_:)))
+        navigationItem.rightBarButtonItem = item
     }
     
     @IBAction func addItem(_ sender: Any) {
@@ -29,9 +32,11 @@ class ViewController: UIViewController {
             return
         }
     }
+    
+    
 }
 
-extension ViewController : ImagePickerDelegate {
+extension MyClothesViewController : ImagePickerDelegate {
     func showImagePickerController() {
         let imagePickerController = ImagePickerController()
         imagePickerController.imageLimit = 1

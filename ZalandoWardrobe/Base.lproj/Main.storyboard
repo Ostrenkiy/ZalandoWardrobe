@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5ET-9L-yZo">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="u8n-KQ-Lcb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--MyClothes-->
+        <scene sceneID="y95-rf-pUc">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MyClothes" storyboardName="MyClothes" id="sap-aH-uvB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2rn-ws-emT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1547" y="-232"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -40,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1911.2" y="38.23088455772114"/>
+            <point key="canvasLocation" x="2495" y="38"/>
         </scene>
         <!--New Item-->
         <scene sceneID="nX6-x8-jQv">
@@ -133,7 +141,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ubv-Y8-UAh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2856.8000000000002" y="36.431784107946029"/>
+            <point key="canvasLocation" x="3375" y="29"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nss-PG-GvG">
@@ -146,12 +154,37 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SwU-j0-14D"/>
+                        <segue destination="ukJ-xI-vTQ" kind="relationship" relationship="rootViewController" id="2oq-fJ-cBD"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qDn-pr-mIQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="38.23088455772114"/>
+            <point key="canvasLocation" x="788" y="464"/>
+        </scene>
+        <!--Recommendations-->
+        <scene sceneID="9R2-WG-KZ4">
+            <objects>
+                <viewController id="ukJ-xI-vTQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Iud-5Y-bvg"/>
+                        <viewControllerLayoutGuide type="bottom" id="2PK-c7-Kcg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ugR-uv-tcG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Recommendations" id="uZP-Hr-blv">
+                        <barButtonItem key="leftBarButtonItem" title="My clothes" id="KHk-Lo-Vjz">
+                            <connections>
+                                <segue destination="sap-aH-uvB" kind="show" id="Lpd-om-yym"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V0C-av-Gtw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1644" y="464"/>
         </scene>
     </scenes>
 </document>

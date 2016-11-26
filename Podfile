@@ -8,6 +8,8 @@ target 'ZalandoWardrobe' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'ImagePicker'
+  pod "EDColor"
+
   # Pods for ZalandoWardrobe
 
   target 'ZalandoWardrobeTests' do
