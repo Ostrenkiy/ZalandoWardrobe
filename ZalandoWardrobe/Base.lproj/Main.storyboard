@@ -154,12 +154,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ukJ-xI-vTQ" kind="show" id="0W4-bw-N2t"/>
+                        <segue destination="ukJ-xI-vTQ" kind="relationship" relationship="rootViewController" id="2oq-fJ-cBD"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qDn-pr-mIQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="801" y="319"/>
+            <point key="canvasLocation" x="788" y="464"/>
         </scene>
         <!--Recommendations-->
         <scene sceneID="9R2-WG-KZ4">
