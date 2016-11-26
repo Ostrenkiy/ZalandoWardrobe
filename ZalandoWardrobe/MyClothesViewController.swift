@@ -13,10 +13,8 @@ class MyClothesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if self.navigationController != nil {
-            let item = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(MyClothesViewController.addItem(_:)))
-            navigationController?.navigationItem.rightBarButtonItem = item
-        }
+        let item = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(MyClothesViewController.addItem(_:)))
+        navigationItem.rightBarButtonItem = item
     }
     
     @IBAction func addItem(_ sender: Any) {

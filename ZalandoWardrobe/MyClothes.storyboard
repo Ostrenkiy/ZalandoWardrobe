@@ -24,7 +24,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="TGa-et-FAR" kind="show" identifier="addItemSegue" id="bje-Sb-U88"/>
+                        <segue destination="TGa-et-FAR" kind="show" identifier="AddItemSegue" id="bje-Sb-U88"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MPN-ag-ios" userLabel="First Responder" sceneMemberID="firstResponder"/>

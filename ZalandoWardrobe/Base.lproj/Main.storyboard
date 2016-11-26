@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,132 +15,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="MyClothes" storyboardName="MyClothes" id="sap-aH-uvB" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2rn-ws-emT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1547" y="-232"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZalandoWardrobe" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhA-4H-HAA">
-                                <rect key="frame" x="164" y="282" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="addItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wa8-TZ-WrM"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="sjt-sg-RDz"/>
-                    <connections>
-                        <segue destination="5ET-9L-yZo" kind="show" identifier="AddItemSegue" id="2Wi-jk-zh4"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2495" y="38"/>
-        </scene>
-        <!--New Item-->
-        <scene sceneID="nX6-x8-jQv">
-            <objects>
-                <tableViewController title="New Item" id="5ET-9L-yZo" customClass="AddItemViewController" customModule="ZalandoWardrobe" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Z4g-Zd-VSc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection id="h0T-nN-Jm2">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="260" id="4p6-Gy-hgp">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4p6-Gy-hgp" id="sKw-Wh-h23">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F3M-JW-Ulf">
-                                                    <rect key="frame" x="67" y="10" width="240" height="240"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="240" id="FcK-5k-iXY"/>
-                                                        <constraint firstAttribute="width" constant="240" id="Lrv-lU-ciz"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="F3M-JW-Ulf" firstAttribute="centerY" secondItem="sKw-Wh-h23" secondAttribute="centerY" id="HSH-bb-cJY"/>
-                                                <constraint firstItem="F3M-JW-Ulf" firstAttribute="centerX" secondItem="sKw-Wh-h23" secondAttribute="centerX" id="iEr-oz-2eF"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="59" id="DWp-6I-RaQ">
-                                        <rect key="frame" x="0.0" y="260" width="375" height="59"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DWp-6I-RaQ" id="2m3-LK-TRR">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7vU-9K-Rlu">
-                                                    <rect key="frame" x="17" y="13" width="350" height="38"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Eoc-cV-xRS">
-                                                        <size key="itemSize" width="50" height="50"/>
-                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    </collectionViewFlowLayout>
-                                                    <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="colorReuseIdentifier" id="BXF-c4-o4q" customClass="ColorCollectionViewCell" customModule="ZalandoWardrobe" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="-6" width="50" height="50"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                            </view>
-                                                        </collectionViewCell>
-                                                    </cells>
-                                                </collectionView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="7vU-9K-Rlu" secondAttribute="bottom" id="OfN-Xs-Guf"/>
-                                                <constraint firstItem="7vU-9K-Rlu" firstAttribute="top" secondItem="2m3-LK-TRR" secondAttribute="topMargin" constant="5" id="PMj-wd-6Nd"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="7vU-9K-Rlu" secondAttribute="trailing" id="S9q-NT-gqD"/>
-                                                <constraint firstItem="7vU-9K-Rlu" firstAttribute="leading" secondItem="2m3-LK-TRR" secondAttribute="leadingMargin" constant="9" id="dCF-14-SCp"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="lGH-h3-FcM">
-                                        <rect key="frame" x="0.0" y="319" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lGH-h3-FcM" id="KcN-rF-jcH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="5ET-9L-yZo" id="7Zq-DF-2oZ"/>
-                            <outlet property="delegate" destination="5ET-9L-yZo" id="hQx-3r-tf4"/>
-                        </connections>
-                    </tableView>
-                    <connections>
-                        <outlet property="colorsCollectionView" destination="7vU-9K-Rlu" id="jgV-Sv-aFs"/>
-                        <outlet property="itemImageView" destination="F3M-JW-Ulf" id="p75-Lr-71i"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ubv-Y8-UAh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3375" y="29"/>
+            <point key="canvasLocation" x="2324" y="262"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nss-PG-GvG">
@@ -172,6 +46,15 @@
                     <view key="view" contentMode="scaleToFill" id="ugR-uv-tcG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l3o-gE-QNS">
+                                <rect key="frame" x="16" y="72" width="343" height="587"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="1XF-J4-ZaP" kind="embed" id="8HV-1T-uFc"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Recommendations" id="uZP-Hr-blv">
@@ -184,7 +67,73 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0C-av-Gtw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1644" y="464"/>
+            <point key="canvasLocation" x="1644" y="463.71814092953525"/>
+        </scene>
+        <!--Recommendations Container View Controller-->
+        <scene sceneID="DQ9-gz-y9c">
+            <objects>
+                <viewController id="1XF-J4-ZaP" customClass="RecommendationsContainerViewController" customModule="ZalandoWardrobe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jed-Kk-SXy"/>
+                        <viewControllerLayoutGuide type="bottom" id="F52-Ui-sn7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7EE-3o-8U6">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="587"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FXm-X4-89P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2388" y="745"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="SCN-9F-0GU">
+            <objects>
+                <pageViewController storyboardIdentifier="RecommendationsPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="oEC-yn-UYD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1DZ-mi-333" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3057" y="464"/>
+        </scene>
+        <!--Single Recommendation View Controller-->
+        <scene sceneID="JX2-0k-B6C">
+            <objects>
+                <viewController storyboardIdentifier="SingleRecommendationViewController" id="8UD-kK-OjX" customClass="SingleRecommendationViewController" customModule="ZalandoWardrobe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7r2-yO-Qko"/>
+                        <viewControllerLayoutGuide type="bottom" id="TV4-Z2-MbT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T54-gU-VKy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GXt-qw-dkN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ukn-ut-ZoS">
+                                    <size key="itemSize" width="150" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GXt-qw-dkN" firstAttribute="top" secondItem="T54-gU-VKy" secondAttribute="top" id="Bhl-wU-iZP"/>
+                            <constraint firstItem="GXt-qw-dkN" firstAttribute="leading" secondItem="T54-gU-VKy" secondAttribute="leading" id="iH6-pD-iet"/>
+                            <constraint firstItem="TV4-Z2-MbT" firstAttribute="top" secondItem="GXt-qw-dkN" secondAttribute="bottom" id="idd-AH-fel"/>
+                            <constraint firstAttribute="trailing" secondItem="GXt-qw-dkN" secondAttribute="trailing" id="qE2-9J-y9u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="GXt-qw-dkN" id="EXb-c5-u6Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gWy-GJ-cl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3058" y="1133"/>
         </scene>
     </scenes>
 </document>

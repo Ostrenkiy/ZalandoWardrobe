@@ -12,6 +12,12 @@
 		0811AAFC1DE981C200473651 /* ClothingTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0811AAFB1DE981C200473651 /* ClothingTypes.swift */; };
 		0811AB011DE998D800473651 /* MyClothes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0811AB001DE998D800473651 /* MyClothes.storyboard */; };
 		0811AB051DE99A1F00473651 /* MyClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0811AB041DE99A1F00473651 /* MyClothesViewController.swift */; };
+		08E2B1EC1DE9A723008CAE7C /* ClothingItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E2B1EA1DE9A723008CAE7C /* ClothingItemCollectionViewCell.swift */; };
+		08E2B1ED1DE9A723008CAE7C /* ClothingItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08E2B1EB1DE9A723008CAE7C /* ClothingItemCollectionViewCell.xib */; };
+		08E2B1F01DE9A7E4008CAE7C /* ClothingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E2B1EF1DE9A7E4008CAE7C /* ClothingItem.swift */; };
+		08E2B1F21DE9AC86008CAE7C /* SingleRecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E2B1F11DE9AC86008CAE7C /* SingleRecommendationViewController.swift */; };
+		08E2B1F41DE9B2D5008CAE7C /* RecommendationsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E2B1F31DE9B2D5008CAE7C /* RecommendationsContainerViewController.swift */; };
+		08E2B1F61DE9B5A9008CAE7C /* ItemSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E2B1F51DE9B5A9008CAE7C /* ItemSet.swift */; };
 		08E88BA21DE8FBB9004CA536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BA11DE8FBB9004CA536 /* AppDelegate.swift */; };
 		08E88BA71DE8FBB9004CA536 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E88BA51DE8FBB9004CA536 /* Main.storyboard */; };
 		08E88BA91DE8FBB9004CA536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E88BA81DE8FBB9004CA536 /* Assets.xcassets */; };
@@ -64,6 +70,12 @@
 		0811AAFB1DE981C200473651 /* ClothingTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingTypes.swift; sourceTree = "<group>"; };
 		0811AB001DE998D800473651 /* MyClothes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyClothes.storyboard; sourceTree = "<group>"; };
 		0811AB041DE99A1F00473651 /* MyClothesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyClothesViewController.swift; sourceTree = "<group>"; };
+		08E2B1EA1DE9A723008CAE7C /* ClothingItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		08E2B1EB1DE9A723008CAE7C /* ClothingItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClothingItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		08E2B1EF1DE9A7E4008CAE7C /* ClothingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingItem.swift; sourceTree = "<group>"; };
+		08E2B1F11DE9AC86008CAE7C /* SingleRecommendationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleRecommendationViewController.swift; sourceTree = "<group>"; };
+		08E2B1F31DE9B2D5008CAE7C /* RecommendationsContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationsContainerViewController.swift; sourceTree = "<group>"; };
+		08E2B1F51DE9B5A9008CAE7C /* ItemSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSet.swift; sourceTree = "<group>"; };
 		08E88B9E1DE8FBB9004CA536 /* ZalandoWardrobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZalandoWardrobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E88BA11DE8FBB9004CA536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08E88BA61DE8FBB9004CA536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -169,7 +181,10 @@
 		0811AB021DE9996900473651 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				08E2B1E91DE9A545008CAE7C /* Recommendation */,
 				0811AB031DE999AD00473651 /* My Clothes */,
+				08E2B1EA1DE9A723008CAE7C /* ClothingItemCollectionViewCell.swift */,
+				08E2B1EB1DE9A723008CAE7C /* ClothingItemCollectionViewCell.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -182,6 +197,24 @@
 				3656C5D61DE908C3007B691A /* AddItemViewController.swift */,
 			);
 			name = "My Clothes";
+			sourceTree = "<group>";
+		};
+		08E2B1E91DE9A545008CAE7C /* Recommendation */ = {
+			isa = PBXGroup;
+			children = (
+				08E2B1F11DE9AC86008CAE7C /* SingleRecommendationViewController.swift */,
+				08E2B1F31DE9B2D5008CAE7C /* RecommendationsContainerViewController.swift */,
+			);
+			name = Recommendation;
+			sourceTree = "<group>";
+		};
+		08E2B1EE1DE9A7D9008CAE7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				08E2B1EF1DE9A7E4008CAE7C /* ClothingItem.swift */,
+				08E2B1F51DE9B5A9008CAE7C /* ItemSet.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		08E88B951DE8FBB9004CA536 = {
@@ -209,6 +242,7 @@
 		08E88BA01DE8FBB9004CA536 /* ZalandoWardrobe */ = {
 			isa = PBXGroup;
 			children = (
+				08E2B1EE1DE9A7D9008CAE7C /* Model */,
 				0811AB021DE9996900473651 /* Controllers */,
 				08E88C011DE90815004CA536 /* Colors */,
 				08E88BCF1DE90059004CA536 /* Color Recognition */,
@@ -433,6 +467,7 @@
 				08E88BAC1DE8FBB9004CA536 /* LaunchScreen.storyboard in Resources */,
 				08E88BA91DE8FBB9004CA536 /* Assets.xcassets in Resources */,
 				08E88BA71DE8FBB9004CA536 /* Main.storyboard in Resources */,
+				08E2B1ED1DE9A723008CAE7C /* ClothingItemCollectionViewCell.xib in Resources */,
 				0811AB011DE998D800473651 /* MyClothes.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,20 +634,25 @@
 				08E88BFE1DE9080F004CA536 /* UIImage+Mask.m in Sources */,
 				0811AAFA1DE97ECB00473651 /* UIImageExtension.swift in Sources */,
 				0811AAFC1DE981C200473651 /* ClothingTypes.swift in Sources */,
+				08E2B1F61DE9B5A9008CAE7C /* ItemSet.swift in Sources */,
 				08E88BF81DE9080F004CA536 /* UIColor+Hex.m in Sources */,
 				08E88BF41DE9080F004CA536 /* NSNumber+Hex.m in Sources */,
+				08E2B1EC1DE9A723008CAE7C /* ClothingItemCollectionViewCell.swift in Sources */,
 				08E88BFC1DE9080F004CA536 /* UIImage+Colors.m in Sources */,
 				0811AAF71DE97DA400473651 /* APIDataDownloader.swift in Sources */,
 				08E88BD11DE90074004CA536 /* ColorRecognizer.swift in Sources */,
 				08E88BFF1DE9080F004CA536 /* UIImage+Pixels.m in Sources */,
+				08E2B1F01DE9A7E4008CAE7C /* ClothingItem.swift in Sources */,
 				08E88BD31DE900AB004CA536 /* ColorShader.swift in Sources */,
 				08E88BA21DE8FBB9004CA536 /* AppDelegate.swift in Sources */,
 				3656C5D91DE9821A007B691A /* ColorCollectionViewCell.swift in Sources */,
+				08E2B1F41DE9B2D5008CAE7C /* RecommendationsContainerViewController.swift in Sources */,
 				3656C5D71DE908C3007B691A /* AddItemViewController.swift in Sources */,
 				08E88BF31DE9080F004CA536 /* CGRectManipulation.m in Sources */,
 				0811AB051DE99A1F00473651 /* MyClothesViewController.swift in Sources */,
 				08E88C001DE9080F004CA536 /* UIImage+TBTint.m in Sources */,
 				08E88BF51DE9080F004CA536 /* ThemeColor.m in Sources */,
+				08E2B1F21DE9AC86008CAE7C /* SingleRecommendationViewController.swift in Sources */,
 				08E88BF61DE9080F004CA536 /* UIColor+ColorFinder.m in Sources */,
 				08E88BF91DE9080F004CA536 /* UIColor+KeyColor.m in Sources */,
 				08E88BFA1DE9080F004CA536 /* UIColor+Manipulation.m in Sources */,
