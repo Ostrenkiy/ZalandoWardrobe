@@ -38,10 +38,9 @@ class AddItemViewController: UITableViewController {
         super.viewDidLoad()
         colorsCollectionView.delegate = self
         colorsCollectionView.dataSource = self
-        
-        self.colors = [UIColor.red, UIColor.black, UIColor.blue].map {ColorItem(color: $0)}
         setupColorsSet()
         setupView()
+        startRecognition()
     }
     
     private func setupView() {
@@ -57,6 +56,16 @@ class AddItemViewController: UITableViewController {
     
     private func setupColorsSet() {
         self.colors = (IttenColors + DefaultColors).map{ ColorItem(color: $0)}
+    }
+    
+    private func startRecognition() {
+        let cube = CCColorCube()
+        let colors = cube.extractColors(from: itemImage!, flags: 4, count:2)
+        
+//        let compressedImage = self.itemImage!.compressIn(bounds: CGSize(width: 50, height: 50))
+//        let recognizer = ColorRecognizer(image: compressedImage)
+//        let a = recognizer.getColors()
+        self.colorsCollectionView.backgroundColor = colors![0] as! UIColor
     }
     
     func addItem() {
