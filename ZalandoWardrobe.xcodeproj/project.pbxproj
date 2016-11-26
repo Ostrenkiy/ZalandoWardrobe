@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0811AAF71DE97DA400473651 /* APIDataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0811AAF61DE97DA400473651 /* APIDataDownloader.swift */; };
 		0811AAFA1DE97ECB00473651 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0811AAF91DE97ECB00473651 /* UIImageExtension.swift */; };
+		0811AAFC1DE981C200473651 /* ClothingTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0811AAFB1DE981C200473651 /* ClothingTypes.swift */; };
 		08E88BA21DE8FBB9004CA536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BA11DE8FBB9004CA536 /* AppDelegate.swift */; };
 		08E88BA41DE8FBB9004CA536 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BA31DE8FBB9004CA536 /* ViewController.swift */; };
 		08E88BA71DE8FBB9004CA536 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E88BA51DE8FBB9004CA536 /* Main.storyboard */; };
@@ -58,6 +59,7 @@
 /* Begin PBXFileReference section */
 		0811AAF61DE97DA400473651 /* APIDataDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDataDownloader.swift; sourceTree = "<group>"; };
 		0811AAF91DE97ECB00473651 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		0811AAFB1DE981C200473651 /* ClothingTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingTypes.swift; sourceTree = "<group>"; };
 		08E88B9E1DE8FBB9004CA536 /* ZalandoWardrobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZalandoWardrobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E88BA11DE8FBB9004CA536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08E88BA31DE8FBB9004CA536 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,14 @@
 			name = Network;
 			sourceTree = "<group>";
 		};
+		0811AAFD1DE981C700473651 /* Clothing Types */ = {
+			isa = PBXGroup;
+			children = (
+				0811AAFB1DE981C200473651 /* ClothingTypes.swift */,
+			);
+			name = "Clothing Types";
+			sourceTree = "<group>";
+		};
 		08E88B951DE8FBB9004CA536 = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +199,7 @@
 				08E88BD41DE9080E004CA536 /* ZalandoWardrobe-Bridging-Header.h */,
 				0811AAF81DE97DA900473651 /* Network */,
 				0811AAF91DE97ECB00473651 /* UIImageExtension.swift */,
+				0811AAFD1DE981C700473651 /* Clothing Types */,
 			);
 			path = ZalandoWardrobe;
 			sourceTree = "<group>";
@@ -565,6 +576,7 @@
 				08E88BA41DE8FBB9004CA536 /* ViewController.swift in Sources */,
 				08E88BFE1DE9080F004CA536 /* UIImage+Mask.m in Sources */,
 				0811AAFA1DE97ECB00473651 /* UIImageExtension.swift in Sources */,
+				0811AAFC1DE981C200473651 /* ClothingTypes.swift in Sources */,
 				08E88BF81DE9080F004CA536 /* UIColor+Hex.m in Sources */,
 				08E88BF41DE9080F004CA536 /* NSNumber+Hex.m in Sources */,
 				08E88BFC1DE9080F004CA536 /* UIImage+Colors.m in Sources */,

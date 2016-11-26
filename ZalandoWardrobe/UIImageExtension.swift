@@ -12,11 +12,11 @@ extension UIImage {
     func resizeTo(newSize: CGSize) -> UIImage {
         
         UIGraphicsBeginImageContext(size)
-        self.drawInRect(CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height))
+        self.draw(in: CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height))
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        return image
+        return image!
     }
     
     func compressIn(bounds: CGSize) -> UIImage {
