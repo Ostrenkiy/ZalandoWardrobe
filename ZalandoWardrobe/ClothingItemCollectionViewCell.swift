@@ -23,18 +23,17 @@ class ClothingItemCollectionViewCell: UICollectionViewCell {
     }
 
     func initWithItem(clothingItem: ClothingItem) {
-        itemImageView.kf.setImage(with: clothingItem.imageURL)
+        if let i = clothingItem.image {
+            itemImageView.image = i
+        } else {
+            itemImageView.kf.setImage(with: clothingItem.imageURL)
+        }
         if !clothingItem.isZalando {
             zalandoButton.isHidden = true
         }
         setupView() 
     }
     
-    func initWithNewClothingItem(clothingItem: NewClothingItem) {
-        itemImageView.image = clothingItem.image
-        zalandoButton.isHidden = true
-        setupView()
-    }
     
     func setupView() {
         self.itemImageView.layer.borderWidth = 1

@@ -19,7 +19,6 @@ class ClothingType {
     }
 }
 
-
 class Clothes {
     
     class func getAllClothes() -> Dictionary<String, [ClothingType]> {
@@ -34,7 +33,7 @@ class Clothes {
             ClothingType("Hats & Caps", "mens-hats-caps"),
             ClothingType("Scarves", "mens-scarves")]
         
-        dic["ClothingType"] = [
+        dic["Clothes"] = [
             ClothingType("Coats", "mens-clothing-coats"),
             ClothingType("Chinos", "mens-clothing-trousers-chinos"),
             ClothingType("Jackets",  "mens-clothing-jackets"),

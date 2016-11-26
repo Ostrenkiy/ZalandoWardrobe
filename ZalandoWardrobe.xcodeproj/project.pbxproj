@@ -15,6 +15,7 @@
 		08B4FA941DE9ED4D00B21947 /* MediaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B4FA931DE9ED4D00B21947 /* MediaAPI.swift */; };
 		08B4FA961DE9F18100B21947 /* AlamofireSwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B4FA951DE9F18100B21947 /* AlamofireSwiftyJSON.swift */; };
 		08B4FA981DEA078000B21947 /* ClothesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B4FA971DEA078000B21947 /* ClothesAPI.swift */; };
+		08B4FA9C1DEA334E00B21947 /* UIImage_PixelColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B4FA9B1DEA334E00B21947 /* UIImage_PixelColor.m */; };
 		08D140C21DE9D4D5000CB07D /* KBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D140C11DE9D4D5000CB07D /* KBButton.swift */; };
 		08D140C41DE9D98C000CB07D /* ClothingItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D140C31DE9D98C000CB07D /* ClothingItemViewController.swift */; };
 		08D140C71DE9D9D8000CB07D /* BrowseItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08D140C61DE9D9D8000CB07D /* BrowseItem.storyboard */; };
@@ -85,6 +86,8 @@
 		08B4FA931DE9ED4D00B21947 /* MediaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaAPI.swift; sourceTree = "<group>"; };
 		08B4FA951DE9F18100B21947 /* AlamofireSwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireSwiftyJSON.swift; sourceTree = "<group>"; };
 		08B4FA971DEA078000B21947 /* ClothesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothesAPI.swift; sourceTree = "<group>"; };
+		08B4FA991DEA331800B21947 /* UIImage_PixelColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIImage_PixelColor.h; path = ../UIImage_PixelColor.h; sourceTree = "<group>"; };
+		08B4FA9B1DEA334E00B21947 /* UIImage_PixelColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImage_PixelColor.m; sourceTree = "<group>"; };
 		08D140C11DE9D4D5000CB07D /* KBButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KBButton.swift; sourceTree = "<group>"; };
 		08D140C31DE9D98C000CB07D /* ClothingItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClothingItemViewController.swift; path = ../ClothingItemViewController.swift; sourceTree = "<group>"; };
 		08D140C61DE9D9D8000CB07D /* BrowseItem.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BrowseItem.storyboard; sourceTree = "<group>"; };
@@ -283,6 +286,8 @@
 		08E88BA01DE8FBB9004CA536 /* ZalandoWardrobe */ = {
 			isa = PBXGroup;
 			children = (
+				08B4FA991DEA331800B21947 /* UIImage_PixelColor.h */,
+				08B4FA9B1DEA334E00B21947 /* UIImage_PixelColor.m */,
 				08E2B1EE1DE9A7D9008CAE7C /* Model */,
 				0811AB021DE9996900473651 /* Controllers */,
 				08E88C011DE90815004CA536 /* Colors */,
@@ -704,6 +709,7 @@
 				0811AAFA1DE97ECB00473651 /* UIImageExtension.swift in Sources */,
 				0811AAFC1DE981C200473651 /* ClothingTypes.swift in Sources */,
 				08E2B1F61DE9B5A9008CAE7C /* ItemSet.swift in Sources */,
+				08B4FA9C1DEA334E00B21947 /* UIImage_PixelColor.m in Sources */,
 				08D140C21DE9D4D5000CB07D /* KBButton.swift in Sources */,
 				08E88BF81DE9080F004CA536 /* UIColor+Hex.m in Sources */,
 				08E88BF41DE9080F004CA536 /* NSNumber+Hex.m in Sources */,

@@ -34,7 +34,7 @@ class ColorRecognizer: NSObject {
     }
     
     private func similarTo(color: UIColor) -> UIColor {
-        return color.mostSimilarColor(in: cs.colorSetAndAdditional as Set<NSObject>)
+        return color.mostSimilarColor(in: cs.colorsSet as Set<NSObject>)
     }
     
     
@@ -46,7 +46,8 @@ class ColorRecognizer: NSObject {
         
         for  i in 0 ..< Int(image.size.width) {
             for j in 0 ..< Int(image.size.height) {
-                let curColorRGBA = image.getPixelColorAtLocation(point: CGPoint(x: i, y: j))!//self.getColorOfPixel(Int(i), y: Int(j))
+                let curColorRGBA = image.color(at: CGPoint(x: i, y: j))!
+//                let curColorRGBA = image.getPixelColorAtLocation(point: CGPoint(x: i, y: j))!//self.getColorOfPixel(Int(i), y: Int(j))
                 if curColorRGBA.getAlpha() != 1 {
                     continue
                 }
@@ -57,7 +58,7 @@ class ColorRecognizer: NSObject {
                 countedColors[collectionColor] = count + 1
                 totalCount += 1
             }
-        }
+        } 
         
         for (color, count) in countedColors {
             if Double(count)/Double(totalCount) > 0.05 {

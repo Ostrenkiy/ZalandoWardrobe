@@ -10,7 +10,8 @@ import Foundation
 import SwiftyJSON
 
 class ClothingItem {
-    var imageURL : URL
+    var imageURL : URL? = nil
+    var image: UIImage? = nil
     var imageHash : String
     var isZalando : Bool
     var zalandoURL : URL?
@@ -25,17 +26,31 @@ class ClothingItem {
         self.category = "mens-sports-shoes"
     }
     
-    init?(json: JSON) {
-        self.imageURL = URL(string: json["media"]["url"].stringValue)!
+    init?(json: JSON, image: UIImage? = nil) {
+        
+        if let i = image {
+            self.image = i
+        }
+//        self.imageURL = URL(string: json["media"]["url"].stringValue)!
         self.isZalando = json["is_zalando"].boolValue
         if let zalandoURLString = json["zalando_url"].string {
             self.zalandoURL = URL(string: zalandoURLString)
         } else {
             self.zalandoURL = nil
         }
-        self.imageHash = json["media"]["hash"].stringValue
-        for hexString in json["media"].arrayValue.map({$0.stringValue}) {
-            colors += [UIColor(hexString: hexString)]
+//        self.imageHash = json["media"]["hash"].stringValue
+//        for hexString in json["media"].arrayValue.map({$0.stringValue}) {
+//            colors += [UIColor(hexString: hexString)]
+//        }
+        if json["media"]["status"] == "pending" {
+            self.imageHash = json["media"]["hash"].stringValue
+        } else {
+            self.imageURL = URL(string: json["media"]["url"].stringValue)!        
+            self.imageHash = json["media"]["hash"].stringValue
+            for hexString in json["media"].arrayValue.map({$0.stringValue}) {
+                colors += [UIColor(hexString: hexString)]
+            }
+
         }
         self.category = json["category"].stringValue
     }

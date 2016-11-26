@@ -27,14 +27,13 @@ class AddItemViewController: UITableViewController {
     var itemImage: UIImage?
     var colors: [ColorItem]?
     var selectedClothingType: ClothingType?
-    var completionBlock: ((NewClothingItem) -> Void)?
+    var completionBlock: ((ClothingItem) -> Void)?
 
     @IBOutlet weak var colorsCollectionView: UICollectionView!
     @IBOutlet weak var itemImageView: UIImageView!
     @IBOutlet weak var selectItemTypeView: UIView!
     
     override func viewDidLoad() {
-       
         super.viewDidLoad()
         colorsCollectionView.delegate = self
         colorsCollectionView.dataSource = self
@@ -59,21 +58,41 @@ class AddItemViewController: UITableViewController {
     }
     
     private func startRecognition() {
-        let cube = CCColorCube()
-        let colors = cube.extractColors(from: itemImage!, flags: 4, count:2)
+//        let cube = CCColorCube()
+//        let colors = cube.extractColors(from: itemImage!, flags: 4, count:2)
         
-//        let compressedImage = self.itemImage!.compressIn(bounds: CGSize(width: 50, height: 50))
-//        let recognizer = ColorRecognizer(image: compressedImage)
-//        let a = recognizer.getColors()
-        self.colorsCollectionView.backgroundColor = colors![0] as! UIColor
+        let compressedImage = self.itemImage!.compressIn(bounds: CGSize(width: 50, height: 50))
+        let recognizer = ColorRecognizer(image: compressedImage)
+        let a = recognizer.getColors()
+        print(a)
+        for recognizedColor in a {
+            if let index = colors?.index(where: {$0.color == recognizedColor}) {
+                colors?[index].isSelected = true
+            }
+        }
+//        self.colorsCollectionView.backgroundColor = colors![0].color 
     }
     
     func addItem() {
         let colorsSelected = colors!
             .filter{$0.isSelected}
             .map{$0.color}
-        self.completionBlock?(NewClothingItem(colors: colorsSelected, image: itemImage!, clothingType: selectedClothingType!))
-        self.navigationController?.popViewController(animated: true)
+        APIDataDownloader.media.create(image: itemImage!, success: {
+            [weak self]
+            hash in
+            APIDataDownloader.clothes.create(hash: hash, category: self!.selectedClothingType!.serverName, colors: colorsSelected, image: self!.itemImage!, success: {
+                [weak self]
+                item in
+                self?.completionBlock?(item)
+                _ = self?.navigationController?.popViewController(animated: true)
+            }, error: {
+                errorMsg in
+                print(errorMsg)
+            })
+        }, error: {
+            errorMsg in
+            print(errorMsg)
+        })
     }
 }
 
