@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,37 +21,26 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZuP-hY-L7c">
                         <rect key="frame" x="0.0" y="0.0" width="121" height="183"/>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szu-y9-Ajc" customClass="KBButton" customModule="ZalandoWardrobe" customModuleProvider="target">
-                        <rect key="frame" x="23.5" y="147" width="75" height="28"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szu-y9-Ajc">
+                        <rect key="frame" x="40" y="135" width="40" height="40"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="75" id="6ca-UV-fz1"/>
-                            <constraint firstAttribute="height" constant="28" id="Ur0-AZ-jhL"/>
+                            <constraint firstAttribute="height" constant="40" id="VoG-Ga-sQ5"/>
+                            <constraint firstAttribute="width" constant="40" id="uqR-vm-vvP"/>
                         </constraints>
-                        <state key="normal" title="Zalando">
+                        <state key="normal" image="Buy">
                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                <real key="value" value="0.0"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="5"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
-                                <color key="value" red="0.85262101888656616" green="0.42218321561813354" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="addShadow" value="YES"/>
-                        </userDefinedRuntimeAttributes>
+                        <state key="selected" image="Buy selected"/>
                     </button>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="ZuP-hY-L7c" secondAttribute="trailing" id="9aa-xL-GPP"/>
                 <constraint firstItem="ZuP-hY-L7c" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MUB-hy-z0u"/>
-                <constraint firstItem="szu-y9-Ajc" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="VXr-Jf-0Nj"/>
                 <constraint firstItem="ZuP-hY-L7c" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bfd-EA-FPd"/>
-                <constraint firstAttribute="bottom" secondItem="szu-y9-Ajc" secondAttribute="bottom" constant="8" id="dj5-uX-6x6"/>
+                <constraint firstItem="szu-y9-Ajc" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ctD-r4-UpS"/>
                 <constraint firstAttribute="bottom" secondItem="ZuP-hY-L7c" secondAttribute="bottom" id="wqs-uq-wRU"/>
+                <constraint firstAttribute="bottom" secondItem="szu-y9-Ajc" secondAttribute="bottom" constant="8" id="xuR-vG-nPU"/>
             </constraints>
             <size key="customSize" width="121" height="183"/>
             <connections>
@@ -61,4 +50,8 @@
             <point key="canvasLocation" x="69.5" y="58.5"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="Buy" width="742" height="734"/>
+        <image name="Buy selected" width="716" height="702"/>
+    </resources>
 </document>

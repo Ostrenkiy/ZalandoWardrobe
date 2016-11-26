@@ -24,10 +24,20 @@ class ClothingItemCollectionViewCell: UICollectionViewCell {
         if !clothingItem.isZalando {
             zalandoButton.isHidden = true
         }
+        setupView()
     }
     
     func initWithNewClothingItem(clothingItem: NewClothingItem) {
         itemImageView.image = clothingItem.image
         zalandoButton.isHidden = true
+        setupView()
+    }
+    
+    private func setupView() {
+        let a = Image(named: "Buy")
+        self.zalandoButton.setImage(Image(named: "Buy"), for: .normal)
+        self.zalandoButton.setImage(Image(named: "Buy selected"), for: .selected)
+
+        
     }
 }
