@@ -34,7 +34,7 @@ class ColorRecognizer: NSObject {
     }
     
     private func similarTo(color: UIColor) -> UIColor {
-        return color.mostSimilarColor(in: cs.colorSetAndAdditional as Set<NSObject>)
+        return color.mostSimilarColor(in: cs.colorsSet as Set<NSObject>)
     }
     
     
