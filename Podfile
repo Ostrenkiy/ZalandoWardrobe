@@ -9,6 +9,7 @@ target 'ZalandoWardrobe' do
   pod 'SwiftyJSON'
   pod 'ImagePicker'
   pod "EDColor"
+  pod 'SnapKit'
   pod 'Kingfisher'
   pod 'FLKAutoLayout'
   # Pods for ZalandoWardrobe
