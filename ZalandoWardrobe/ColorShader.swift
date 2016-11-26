@@ -51,7 +51,7 @@ class ColorShades: NSObject {
         s = 0
         l = 0
         a = 0
-        let hslColor = color.getHue(&h, saturation: &s, brightness: &l, alpha: &a)
+        _ = color.getHue(&h, saturation: &s, brightness: &l, alpha: &a)
         
         if lighter {
             l = l*1.6
