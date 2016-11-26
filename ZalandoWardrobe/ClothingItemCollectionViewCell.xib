@@ -21,9 +21,27 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZuP-hY-L7c">
                         <rect key="frame" x="0.0" y="0.0" width="121" height="183"/>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szu-y9-Ajc">
-                        <rect key="frame" x="33" y="145" width="56" height="30"/>
-                        <state key="normal" title="Zalando"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szu-y9-Ajc" customClass="KBButton" customModule="ZalandoWardrobe" customModuleProvider="target">
+                        <rect key="frame" x="23.5" y="147" width="75" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="6ca-UV-fz1"/>
+                            <constraint firstAttribute="height" constant="28" id="Ur0-AZ-jhL"/>
+                        </constraints>
+                        <state key="normal" title="Zalando">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                <color key="value" red="0.85262101888656616" green="0.42218321561813354" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="addShadow" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </button>
                 </subviews>
             </view>

@@ -26,7 +26,7 @@ class AddItemViewController: UITableViewController {
 
     var itemImage: UIImage?
     var colors: [ColorItem]?
-    
+        
     @IBOutlet weak var colorsCollectionView: UICollectionView!
     @IBOutlet weak var itemImageView: UIImageView!
     
