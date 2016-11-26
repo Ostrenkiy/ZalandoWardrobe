@@ -14,6 +14,22 @@
 		08E88BAC1DE8FBB9004CA536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E88BAA1DE8FBB9004CA536 /* LaunchScreen.storyboard */; };
 		08E88BB71DE8FBB9004CA536 /* ZalandoWardrobeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BB61DE8FBB9004CA536 /* ZalandoWardrobeTests.swift */; };
 		08E88BC21DE8FBB9004CA536 /* ZalandoWardrobeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BC11DE8FBB9004CA536 /* ZalandoWardrobeUITests.swift */; };
+		08E88BD11DE90074004CA536 /* ColorRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BD01DE90074004CA536 /* ColorRecognizer.swift */; };
+		08E88BD31DE900AB004CA536 /* ColorShader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BD21DE900AB004CA536 /* ColorShader.swift */; };
+		08E88BF31DE9080F004CA536 /* CGRectManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BD71DE9080F004CA536 /* CGRectManipulation.m */; };
+		08E88BF41DE9080F004CA536 /* NSNumber+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BD91DE9080F004CA536 /* NSNumber+Hex.m */; };
+		08E88BF51DE9080F004CA536 /* ThemeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BDB1DE9080F004CA536 /* ThemeColor.m */; };
+		08E88BF61DE9080F004CA536 /* UIColor+ColorFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BDD1DE9080F004CA536 /* UIColor+ColorFinder.m */; };
+		08E88BF71DE9080F004CA536 /* UIColor+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BDF1DE9080F004CA536 /* UIColor+Components.m */; };
+		08E88BF81DE9080F004CA536 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BE11DE9080F004CA536 /* UIColor+Hex.m */; };
+		08E88BF91DE9080F004CA536 /* UIColor+KeyColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BE31DE9080F004CA536 /* UIColor+KeyColor.m */; };
+		08E88BFA1DE9080F004CA536 /* UIColor+Manipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BE51DE9080F004CA536 /* UIColor+Manipulation.m */; };
+		08E88BFB1DE9080F004CA536 /* UIColor+NeueColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BE71DE9080F004CA536 /* UIColor+NeueColors.m */; };
+		08E88BFC1DE9080F004CA536 /* UIImage+Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BE91DE9080F004CA536 /* UIImage+Colors.m */; };
+		08E88BFD1DE9080F004CA536 /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BEB1DE9080F004CA536 /* UIImage+Crop.m */; };
+		08E88BFE1DE9080F004CA536 /* UIImage+Mask.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BED1DE9080F004CA536 /* UIImage+Mask.m */; };
+		08E88BFF1DE9080F004CA536 /* UIImage+Pixels.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BEF1DE9080F004CA536 /* UIImage+Pixels.m */; };
+		08E88C001DE9080F004CA536 /* UIImage+TBTint.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E88BF11DE9080F004CA536 /* UIImage+TBTint.m */; };
 		7D65F9B77701073B4CAAD03E /* Pods_ZalandoWardrobeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB56BD505C52D187DCAC5927 /* Pods_ZalandoWardrobeTests.framework */; };
 		9CB0C0D745EECFA1E0C6BEFD /* Pods_ZalandoWardrobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3271D3F52B6E963AEBB17A5D /* Pods_ZalandoWardrobe.framework */; };
 		C7730E93A8F2E96B143A3782 /* Pods_ZalandoWardrobeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E630DEDD05C48604FD73216 /* Pods_ZalandoWardrobeUITests.framework */; };
@@ -50,6 +66,39 @@
 		08E88BBD1DE8FBB9004CA536 /* ZalandoWardrobeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZalandoWardrobeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E88BC11DE8FBB9004CA536 /* ZalandoWardrobeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZalandoWardrobeUITests.swift; sourceTree = "<group>"; };
 		08E88BC31DE8FBB9004CA536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08E88BD01DE90074004CA536 /* ColorRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorRecognizer.swift; sourceTree = "<group>"; };
+		08E88BD21DE900AB004CA536 /* ColorShader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorShader.swift; sourceTree = "<group>"; };
+		08E88BD41DE9080E004CA536 /* ZalandoWardrobe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZalandoWardrobe-Bridging-Header.h"; sourceTree = "<group>"; };
+		08E88BD51DE9080F004CA536 /* Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = "<group>"; };
+		08E88BD61DE9080F004CA536 /* CGRectManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGRectManipulation.h; sourceTree = "<group>"; };
+		08E88BD71DE9080F004CA536 /* CGRectManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGRectManipulation.m; sourceTree = "<group>"; };
+		08E88BD81DE9080F004CA536 /* NSNumber+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Hex.h"; sourceTree = "<group>"; };
+		08E88BD91DE9080F004CA536 /* NSNumber+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Hex.m"; sourceTree = "<group>"; };
+		08E88BDA1DE9080F004CA536 /* ThemeColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeColor.h; sourceTree = "<group>"; };
+		08E88BDB1DE9080F004CA536 /* ThemeColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeColor.m; sourceTree = "<group>"; };
+		08E88BDC1DE9080F004CA536 /* UIColor+ColorFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorFinder.h"; sourceTree = "<group>"; };
+		08E88BDD1DE9080F004CA536 /* UIColor+ColorFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorFinder.m"; sourceTree = "<group>"; };
+		08E88BDE1DE9080F004CA536 /* UIColor+Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Components.h"; sourceTree = "<group>"; };
+		08E88BDF1DE9080F004CA536 /* UIColor+Components.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Components.m"; sourceTree = "<group>"; };
+		08E88BE01DE9080F004CA536 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		08E88BE11DE9080F004CA536 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		08E88BE21DE9080F004CA536 /* UIColor+KeyColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+KeyColor.h"; sourceTree = "<group>"; };
+		08E88BE31DE9080F004CA536 /* UIColor+KeyColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KeyColor.m"; sourceTree = "<group>"; };
+		08E88BE41DE9080F004CA536 /* UIColor+Manipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Manipulation.h"; sourceTree = "<group>"; };
+		08E88BE51DE9080F004CA536 /* UIColor+Manipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Manipulation.m"; sourceTree = "<group>"; };
+		08E88BE61DE9080F004CA536 /* UIColor+NeueColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NeueColors.h"; sourceTree = "<group>"; };
+		08E88BE71DE9080F004CA536 /* UIColor+NeueColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NeueColors.m"; sourceTree = "<group>"; };
+		08E88BE81DE9080F004CA536 /* UIImage+Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Colors.h"; sourceTree = "<group>"; };
+		08E88BE91DE9080F004CA536 /* UIImage+Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Colors.m"; sourceTree = "<group>"; };
+		08E88BEA1DE9080F004CA536 /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
+		08E88BEB1DE9080F004CA536 /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
+		08E88BEC1DE9080F004CA536 /* UIImage+Mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Mask.h"; sourceTree = "<group>"; };
+		08E88BED1DE9080F004CA536 /* UIImage+Mask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Mask.m"; sourceTree = "<group>"; };
+		08E88BEE1DE9080F004CA536 /* UIImage+Pixels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Pixels.h"; sourceTree = "<group>"; };
+		08E88BEF1DE9080F004CA536 /* UIImage+Pixels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Pixels.m"; sourceTree = "<group>"; };
+		08E88BF01DE9080F004CA536 /* UIImage+TBTint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TBTint.h"; sourceTree = "<group>"; };
+		08E88BF11DE9080F004CA536 /* UIImage+TBTint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TBTint.m"; sourceTree = "<group>"; };
+		08E88BF21DE9080F004CA536 /* Colors-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Colors-Prefix.pch"; sourceTree = "<group>"; };
 		3271D3F52B6E963AEBB17A5D /* Pods_ZalandoWardrobe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZalandoWardrobe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		524E402C36A923691C466E53 /* Pods-ZalandoWardrobeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZalandoWardrobeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZalandoWardrobeUITests/Pods-ZalandoWardrobeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6E630DEDD05C48604FD73216 /* Pods_ZalandoWardrobeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZalandoWardrobeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,12 +163,15 @@
 		08E88BA01DE8FBB9004CA536 /* ZalandoWardrobe */ = {
 			isa = PBXGroup;
 			children = (
+				08E88C011DE90815004CA536 /* Colors */,
+				08E88BCF1DE90059004CA536 /* Color Recognition */,
 				08E88BA11DE8FBB9004CA536 /* AppDelegate.swift */,
 				08E88BA31DE8FBB9004CA536 /* ViewController.swift */,
 				08E88BA51DE8FBB9004CA536 /* Main.storyboard */,
 				08E88BA81DE8FBB9004CA536 /* Assets.xcassets */,
 				08E88BAA1DE8FBB9004CA536 /* LaunchScreen.storyboard */,
 				08E88BAD1DE8FBB9004CA536 /* Info.plist */,
+				08E88BD41DE9080E004CA536 /* ZalandoWardrobe-Bridging-Header.h */,
 			);
 			path = ZalandoWardrobe;
 			sourceTree = "<group>";
@@ -140,6 +192,52 @@
 				08E88BC31DE8FBB9004CA536 /* Info.plist */,
 			);
 			path = ZalandoWardrobeUITests;
+			sourceTree = "<group>";
+		};
+		08E88BCF1DE90059004CA536 /* Color Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				08E88BD01DE90074004CA536 /* ColorRecognizer.swift */,
+				08E88BD21DE900AB004CA536 /* ColorShader.swift */,
+			);
+			name = "Color Recognition";
+			sourceTree = "<group>";
+		};
+		08E88C011DE90815004CA536 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				08E88BD51DE9080F004CA536 /* Colors.h */,
+				08E88BD61DE9080F004CA536 /* CGRectManipulation.h */,
+				08E88BD71DE9080F004CA536 /* CGRectManipulation.m */,
+				08E88BD81DE9080F004CA536 /* NSNumber+Hex.h */,
+				08E88BD91DE9080F004CA536 /* NSNumber+Hex.m */,
+				08E88BDA1DE9080F004CA536 /* ThemeColor.h */,
+				08E88BDB1DE9080F004CA536 /* ThemeColor.m */,
+				08E88BDC1DE9080F004CA536 /* UIColor+ColorFinder.h */,
+				08E88BDD1DE9080F004CA536 /* UIColor+ColorFinder.m */,
+				08E88BDE1DE9080F004CA536 /* UIColor+Components.h */,
+				08E88BDF1DE9080F004CA536 /* UIColor+Components.m */,
+				08E88BE01DE9080F004CA536 /* UIColor+Hex.h */,
+				08E88BE11DE9080F004CA536 /* UIColor+Hex.m */,
+				08E88BE21DE9080F004CA536 /* UIColor+KeyColor.h */,
+				08E88BE31DE9080F004CA536 /* UIColor+KeyColor.m */,
+				08E88BE41DE9080F004CA536 /* UIColor+Manipulation.h */,
+				08E88BE51DE9080F004CA536 /* UIColor+Manipulation.m */,
+				08E88BE61DE9080F004CA536 /* UIColor+NeueColors.h */,
+				08E88BE71DE9080F004CA536 /* UIColor+NeueColors.m */,
+				08E88BE81DE9080F004CA536 /* UIImage+Colors.h */,
+				08E88BE91DE9080F004CA536 /* UIImage+Colors.m */,
+				08E88BEA1DE9080F004CA536 /* UIImage+Crop.h */,
+				08E88BEB1DE9080F004CA536 /* UIImage+Crop.m */,
+				08E88BEC1DE9080F004CA536 /* UIImage+Mask.h */,
+				08E88BED1DE9080F004CA536 /* UIImage+Mask.m */,
+				08E88BEE1DE9080F004CA536 /* UIImage+Pixels.h */,
+				08E88BEF1DE9080F004CA536 /* UIImage+Pixels.m */,
+				08E88BF01DE9080F004CA536 /* UIImage+TBTint.h */,
+				08E88BF11DE9080F004CA536 /* UIImage+TBTint.m */,
+				08E88BF21DE9080F004CA536 /* Colors-Prefix.pch */,
+			);
+			name = Colors;
 			sourceTree = "<group>";
 		};
 		0A2B1BF1AE9002671331BD74 /* Pods */ = {
@@ -242,6 +340,7 @@
 				TargetAttributes = {
 					08E88B9D1DE8FBB9004CA536 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					08E88BB11DE8FBB9004CA536 = {
@@ -447,7 +546,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				08E88BA41DE8FBB9004CA536 /* ViewController.swift in Sources */,
+				08E88BFE1DE9080F004CA536 /* UIImage+Mask.m in Sources */,
+				08E88BF81DE9080F004CA536 /* UIColor+Hex.m in Sources */,
+				08E88BF41DE9080F004CA536 /* NSNumber+Hex.m in Sources */,
+				08E88BFC1DE9080F004CA536 /* UIImage+Colors.m in Sources */,
+				08E88BD11DE90074004CA536 /* ColorRecognizer.swift in Sources */,
+				08E88BFF1DE9080F004CA536 /* UIImage+Pixels.m in Sources */,
+				08E88BD31DE900AB004CA536 /* ColorShader.swift in Sources */,
 				08E88BA21DE8FBB9004CA536 /* AppDelegate.swift in Sources */,
+				08E88BF31DE9080F004CA536 /* CGRectManipulation.m in Sources */,
+				08E88C001DE9080F004CA536 /* UIImage+TBTint.m in Sources */,
+				08E88BF51DE9080F004CA536 /* ThemeColor.m in Sources */,
+				08E88BF61DE9080F004CA536 /* UIColor+ColorFinder.m in Sources */,
+				08E88BF91DE9080F004CA536 /* UIColor+KeyColor.m in Sources */,
+				08E88BFA1DE9080F004CA536 /* UIColor+Manipulation.m in Sources */,
+				08E88BFD1DE9080F004CA536 /* UIImage+Crop.m in Sources */,
+				08E88BF71DE9080F004CA536 /* UIColor+Components.m in Sources */,
+				08E88BFB1DE9080F004CA536 /* UIColor+NeueColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,10 +715,13 @@
 			baseConfigurationReference = C4B3C0E3FF2E2332468A3F39 /* Pods-ZalandoWardrobe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ZalandoWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexKarpov.ZalandoWardrobe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZalandoWardrobe/ZalandoWardrobe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -613,10 +731,12 @@
 			baseConfigurationReference = DA02A9E3AC082943694D624F /* Pods-ZalandoWardrobe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ZalandoWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexKarpov.ZalandoWardrobe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZalandoWardrobe/ZalandoWardrobe-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
