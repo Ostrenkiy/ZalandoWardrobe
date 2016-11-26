@@ -34,7 +34,6 @@ class AddItemViewController: UITableViewController {
     @IBOutlet weak var selectItemTypeView: UIView!
     
     override func viewDidLoad() {
-       
         super.viewDidLoad()
         colorsCollectionView.delegate = self
         colorsCollectionView.dataSource = self
@@ -59,13 +58,19 @@ class AddItemViewController: UITableViewController {
     }
     
     private func startRecognition() {
-        let cube = CCColorCube()
-        let colors = cube.extractColors(from: itemImage!, flags: 4, count:2)
+//        let cube = CCColorCube()
+//        let colors = cube.extractColors(from: itemImage!, flags: 4, count:2)
         
-//        let compressedImage = self.itemImage!.compressIn(bounds: CGSize(width: 50, height: 50))
-//        let recognizer = ColorRecognizer(image: compressedImage)
-//        let a = recognizer.getColors()
-        self.colorsCollectionView.backgroundColor = colors![0] as! UIColor
+        let compressedImage = self.itemImage!.compressIn(bounds: CGSize(width: 50, height: 50))
+        let recognizer = ColorRecognizer(image: compressedImage)
+        let a = recognizer.getColors()
+        print(a)
+        for recognizedColor in a {
+            if let index = colors?.index(where: {$0.color == recognizedColor}) {
+                colors?[index].isSelected = true
+            }
+        }
+//        self.colorsCollectionView.backgroundColor = colors![0].color 
     }
     
     func addItem() {

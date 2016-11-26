@@ -4,4 +4,5 @@
 
 #import "Colors.h"
 #import "CCColorCube.h"
+#import "UIImage_PixelColor.h"
 //#import "EDColor.h"
