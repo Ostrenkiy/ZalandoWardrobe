@@ -13,7 +13,7 @@ import SwiftyJSON
 class MediaAPI {
     func create(image: UIImage, success successHandler: @escaping (String)->Void, error errorHandler: @escaping (String)->Void) {
         let headers = ["Accept": "application/json"]
-        let URL = try! URLRequest(url: "http://delivery-service-api.appspot.com/v1/media/?async=false", method: .post, headers: headers)
+        let URL = try! URLRequest(url: "http://delivery-service-api.appspot.com/v1/media/?async=true", method: .post, headers: headers)
         Alamofire.upload(multipartFormData: {
             multipartFormData in
             multipartFormData.append(UIImageJPEGRepresentation(image, 0.5)!, withName: "file", fileName: "file", mimeType: "image/jpeg")

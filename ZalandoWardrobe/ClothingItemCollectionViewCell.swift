@@ -30,6 +30,21 @@ class ClothingItemCollectionViewCell: UICollectionViewCell {
         }
         if !clothingItem.isZalando {
             zalandoButton.isHidden = true
+            
+            let readableName = Array(Clothes.getAllClothes().values)
+                .reduce([], +)
+                .filter({ a in 
+                    return a.serverName == clothingItem.category
+                })
+                .first!
+                .readableName
+            
+            titleLabel.text = readableName
+            subtitleLabel.text = "Your wardrobe"
+        } else {
+            zalandoButton.isHidden = false
+            titleLabel.text = clothingItem.zalandoName!
+            subtitleLabel.text = clothingItem.price
         }
         setupView() 
     }

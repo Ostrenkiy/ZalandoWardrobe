@@ -65,7 +65,7 @@ class ClothingItem {
             }
 
         }
-        self.category = json["category"].stringValue
+        self.category = json["category_name"].stringValue
     }
     
 }
