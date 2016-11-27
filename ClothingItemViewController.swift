@@ -23,10 +23,7 @@ class ClothingItemViewController: UIViewController {
         
         if let i = item {
             clothingItemImageView.kf.setImage(with: i.imageURL)
-            if i.isZalando {
-                shopView.isHidden = false
-            } else {
-                shopView.isHidden = true
+            if !i.isZalando {
                 self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(ClothingItemViewController.delete as (ClothingItemViewController) -> () -> ()))
             }
         }
