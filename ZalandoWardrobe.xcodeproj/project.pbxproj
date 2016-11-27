@@ -301,7 +301,6 @@
 				0811AAF81DE97DA900473651 /* Network */,
 				08E88BA11DE8FBB9004CA536 /* AppDelegate.swift */,
 				08E88BA51DE8FBB9004CA536 /* Main.storyboard */,
-				3656C5D81DE9821A007B691A /* ColorCollectionViewCell.swift */,
 				08E88BA81DE8FBB9004CA536 /* Assets.xcassets */,
 				08E88BAA1DE8FBB9004CA536 /* LaunchScreen.storyboard */,
 				08E88BAD1DE8FBB9004CA536 /* Info.plist */,
@@ -405,6 +404,7 @@
 		364681241DE9ED800007AFB0 /* AddItem */ = {
 			isa = PBXGroup;
 			children = (
+				3656C5D81DE9821A007B691A /* ColorCollectionViewCell.swift */,
 				3656C5DA1DE9C57B007B691A /* SelectItemTypeViewController.swift */,
 				3656C5D61DE908C3007B691A /* AddItemViewController.swift */,
 			);

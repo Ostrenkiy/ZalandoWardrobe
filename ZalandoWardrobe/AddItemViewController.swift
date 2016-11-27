@@ -114,10 +114,7 @@ extension AddItemViewController : UICollectionViewDataSource {
         let cell = colorsCollectionView.dequeueReusableCell(withReuseIdentifier: colorReuseIdentifier,
                                                                  for: indexPath) as! ColorCollectionViewCell
         if let colorItem = self.colors?[indexPath.row] {
-            cell.backgroundColor = colorItem.color
-            cell.isSelectedImageView.backgroundColor = colorItem.isSelected ? UIColor.green : UIColor.clear
-            cell.layer.cornerRadius = cell.frame.height / 2
-            cell.layer.masksToBounds = true
+            cell.setupViewWithColorItem(colorItem: colorItem)
         }
         
         return cell
@@ -129,12 +126,12 @@ extension AddItemViewController : UICollectionViewDelegate, UICollectionViewDele
         if let colorItem = self.colors?[indexPath.row] {
             colorItem.isSelected = !colorItem.isSelected
             let cell = colorsCollectionView.cellForItem(at: indexPath) as! ColorCollectionViewCell
-            UIView.animate(withDuration: 0.5, animations: {                
-                //implement custom animation
-                
-                cell.isSelectedImageView.backgroundColor = colorItem.isSelected ? UIColor.green : UIColor.clear
-
-            })
+            cell.isSelectedImageView.isHidden = !colorItem.isSelected
+//            UIView.animate(withDuration: 0.5, animations: {                
+//                //implement custom animation
+//                
+//
+//            })
         }
     }
     
