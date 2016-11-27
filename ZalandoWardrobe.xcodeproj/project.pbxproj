@@ -499,6 +499,7 @@
 				TargetAttributes = {
 					08E88B9D1DE8FBB9004CA536 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 4562ZPB9BG;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
@@ -902,7 +903,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4562ZPB9BG;
 				INFOPLIST_FILE = ZalandoWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexKarpov.ZalandoWardrobe;
@@ -919,7 +920,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4562ZPB9BG;
 				INFOPLIST_FILE = ZalandoWardrobe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexKarpov.ZalandoWardrobe;
