@@ -24,7 +24,7 @@ class MyClothesViewController: UIViewController {
         collectionView.register(UINib(nibName: "ClothingItemCollectionViewCell", bundle: nil) , forCellWithReuseIdentifier: "ClothingItemCollectionViewCell")
         collectionView.delegate = self
         collectionView.dataSource = self
-        
+        title = "Wardrobe"
         let rc = UIRefreshControl()
         rc.addTarget(self, action: #selector(MyClothesViewController.refreshClothes), for: UIControlEvents.valueChanged)
         collectionView.refreshControl = rc

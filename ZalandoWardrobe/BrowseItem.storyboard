@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="el6-aG-Z6V">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="el6-aG-Z6V">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -83,6 +83,7 @@
                         <outlet property="clothingItemImageView" destination="ZCD-5U-Nm6" id="SbC-R4-21Q"/>
                         <outlet property="priceLabel" destination="XIo-5z-9wb" id="MHW-Zg-Hwb"/>
                         <outlet property="typeLabel" destination="Irw-8H-k5s" id="mqP-hz-n0f"/>
+                        <outlet property="zalandoInfoView" destination="r2e-dX-w6b" id="3ci-fJ-CNO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v1W-i0-bQu" userLabel="First Responder" sceneMemberID="firstResponder"/>

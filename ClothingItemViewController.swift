@@ -15,6 +15,7 @@ class ClothingItemViewController: UIViewController {
     @IBOutlet weak var clothingItemImageView: UIImageView!
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var zalandoInfoView: UIView!
     
     var item: ClothingItem?
     
@@ -25,8 +26,14 @@ class ClothingItemViewController: UIViewController {
             clothingItemImageView.kf.setImage(with: i.imageURL)
             if !i.isZalando {
                 self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(ClothingItemViewController.delete as (ClothingItemViewController) -> () -> ()))
+                zalandoInfoView.isHidden = true
+            } else {
+                typeLabel.text = i.zalandoName!
+                priceLabel.text = i.price!
             }
         }
+        
+        title = "Item"
         // Do any additional setup after loading the view.
     }
     
@@ -50,5 +57,8 @@ class ClothingItemViewController: UIViewController {
     }
     
     @IBAction func browseButtonPressed(_ sender: Any) {
+        if let url = item?.zalandoURL {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil) 
+        }
     }
 }
