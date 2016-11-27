@@ -48,7 +48,13 @@ class ClothingItem {
         if json["media"]["status"] == "pending" {
             self.imageHash = json["media"]["hash"].stringValue
         } else {
-            self.imageURL = URL(string: json["media"]["url"].stringValue)!        
+            if let imageUrlString = json["media"]["url"].string {
+                self.imageURL = URL(string: imageUrlString)!        
+            } else {
+                if let imageUrlString = json["media_url"].string {
+                    self.imageURL = URL(string: imageUrlString)!
+                } 
+            }
             self.imageHash = json["media"]["hash"].stringValue
             for hexString in json["media"].arrayValue.map({$0.stringValue}) {
                 colors += [UIColor(hexString: hexString)]

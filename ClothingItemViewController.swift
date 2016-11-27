@@ -31,7 +31,6 @@ class ClothingItemViewController: UIViewController {
                 self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(ClothingItemViewController.delete as (ClothingItemViewController) -> () -> ()))
             }
         }
-        
         // Do any additional setup after loading the view.
     }
     
