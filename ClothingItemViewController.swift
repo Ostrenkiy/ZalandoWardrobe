@@ -8,6 +8,8 @@
 
 import UIKit
 import Kingfisher
+import SVProgressHUD
+
 class ClothingItemViewController: UIViewController {
     
     @IBOutlet weak var clothingItemImageView: UIImageView!
@@ -26,10 +28,25 @@ class ClothingItemViewController: UIViewController {
                 shopView.isHidden = false
             } else {
                 shopView.isHidden = true
+                self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(ClothingItemViewController.delete as (ClothingItemViewController) -> () -> ()))
             }
         }
         
         // Do any additional setup after loading the view.
+    }
+    
+    func delete() {
+        if let i = item {
+            SVProgressHUD.show()
+            APIDataDownloader.clothes.delete(item: i, success: {
+                [weak self] in
+                SVProgressHUD.showSuccess(withStatus: "Deleted!")
+                self?.navigationController?.popViewController(animated: true)
+            }, error: {
+                errorMsg in
+                SVProgressHUD.showError(withStatus: errorMsg)
+            })
+        }
     }
 
     override func didReceiveMemoryWarning() {

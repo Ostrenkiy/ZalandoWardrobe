@@ -30,7 +30,26 @@ class MyClothesViewController: UIViewController {
         collectionView.refreshControl = rc
         refreshClothes()
         collectionView.refreshControl?.beginRefreshing()
+        initializeTapRecognizer()
+        // Do any additional setup after loading the view.
     }
+    
+    func initializeTapRecognizer() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(MyClothesViewController.handleTap(_:)))
+        tapGesture.numberOfTapsRequired = 1
+        tapGesture.cancelsTouchesInView = true
+        collectionView.addGestureRecognizer(tapGesture)
+    }
+    
+    func handleTap(_ sender: UITapGestureRecognizer!) {
+        let location = sender.location(ofTouch: 0, in: collectionView)
+        let locationInCollection = CGPoint(x: location.x, y: location.y)
+        let indexPathOptional = collectionView.indexPathForItem(at: locationInCollection)
+        if let indexPath = indexPathOptional {
+            performSegue(withIdentifier: "BrowseItemSegue", sender: items[indexPath.item])
+        }
+    }
+    
     
     @IBAction func addItem(_ sender: Any) {
         showImagePickerController()
@@ -61,6 +80,10 @@ class MyClothesViewController: UIViewController {
                 self?.collectionView.reloadData()
                 print(newItem)
             })
+        case "BrowseItemSegue" :
+            let dvc = segue.destination as! ClothingItemViewController
+            dvc.item = sender as? ClothingItem
+
         default:
             return
         }

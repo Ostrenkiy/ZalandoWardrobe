@@ -20,9 +20,26 @@ class SingleRecommendationViewController: UIViewController {
         collectionView.register(UINib(nibName: "ClothingItemCollectionViewCell", bundle: nil) , forCellWithReuseIdentifier: "ClothingItemCollectionViewCell")
         collectionView.delegate = self
         collectionView.dataSource = self
+        initializeTapRecognizer()
         // Do any additional setup after loading the view.
     }
 
+    func initializeTapRecognizer() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SingleRecommendationViewController.handleTap(_:)))
+        tapGesture.numberOfTapsRequired = 1
+        tapGesture.cancelsTouchesInView = true
+        collectionView.addGestureRecognizer(tapGesture)
+    }
+    
+    func handleTap(_ sender: UITapGestureRecognizer!) {
+        let location = sender.location(ofTouch: 0, in: collectionView)
+        let locationInCollection = CGPoint(x: location.x, y: location.y)
+        let indexPathOptional = collectionView.indexPathForItem(at: locationInCollection)
+        if let indexPath = indexPathOptional {
+            performSegue(withIdentifier: "BrowseItemSegue", sender: items[indexPath.item])
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -40,8 +57,6 @@ class SingleRecommendationViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    
-
 }
 
 extension SingleRecommendationViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {

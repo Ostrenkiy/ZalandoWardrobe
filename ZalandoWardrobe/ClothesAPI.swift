@@ -70,17 +70,18 @@ class ClothesAPI {
         })  
     }
     
-    func delete(hash: String, success successHandler: @escaping (Void) -> Void, error errorHandler : @escaping (String) -> Void) {
-        Alamofire.request("http://delivery-service-api.appspot.com/v1/cloths/\(hash)", method: .delete, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseSwiftyJSON({
+    func delete(item: ClothingItem, success successHandler: @escaping (Void) -> Void, error errorHandler : @escaping (String) -> Void) {
+        let hash = item.hash
+        Alamofire.request("http://delivery-service-api.appspot.com/v1/cloths/\(hash)/", method: .delete, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseData(completionHandler: {
             response in
             
             if let e = response.result.error as? NSError {
-                errorHandler("CREATE clothes: error \(e.domain) \(e.code): \(e.localizedDescription)")
+                errorHandler("DELETE clothes: error \(e.domain) \(e.code): \(e.localizedDescription)")
                 return
             }
             
             if response.response?.statusCode != 204 {
-                errorHandler("CREATE clothes: bad response status code \(response.response?.statusCode)")
+                errorHandler("DELETE clothes: bad response status code \(response.response?.statusCode)")
             } else {
                 successHandler()
             }

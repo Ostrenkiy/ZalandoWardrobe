@@ -13,6 +13,7 @@ class ClothingItem {
     var imageURL : URL? = nil
     var image: UIImage? = nil
     var imageHash : String
+    var hash: String
     var isZalando : Bool
     var zalandoURL : URL?
     var category: String
@@ -24,6 +25,7 @@ class ClothingItem {
         self.imageHash = ""
         self.zalandoURL = nil
         self.category = "mens-sports-shoes"
+        self.hash = "qwerqwerqwre"
     }
     
     init?(json: JSON, image: UIImage? = nil) {
@@ -31,6 +33,7 @@ class ClothingItem {
         if let i = image {
             self.image = i
         }
+        self.hash = json["hash"].stringValue
 //        self.imageURL = URL(string: json["media"]["url"].stringValue)!
         self.isZalando = json["is_zalando"].boolValue
         if let zalandoURLString = json["zalando_url"].string {

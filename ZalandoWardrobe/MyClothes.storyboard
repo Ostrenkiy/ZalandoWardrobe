@@ -10,6 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--BrowseItem-->
+        <scene sceneID="NWH-df-UpO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BrowseItem" id="0BO-lj-ZGm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6MQ-sO-iaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="672" y="-271"/>
+        </scene>
         <!--My Clothes View Controller-->
         <scene sceneID="YaL-tx-huH">
             <objects>
@@ -45,6 +53,7 @@
                     <connections>
                         <outlet property="collectionView" destination="Ez7-7j-BNx" id="kIw-75-TQ4"/>
                         <segue destination="TGa-et-FAR" kind="show" identifier="AddItemSegue" id="bje-Sb-U88"/>
+                        <segue destination="0BO-lj-ZGm" kind="show" identifier="BrowseItemSegue" id="7Y4-n3-aIO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MPN-ag-ios" userLabel="First Responder" sceneMemberID="firstResponder"/>
