@@ -15,7 +15,6 @@ class ClothingItemViewController: UIViewController {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var shopView: UIView!
     
-    
     var item: ClothingItem?
     
     override func viewDidLoad() {
@@ -23,6 +22,11 @@ class ClothingItemViewController: UIViewController {
         
         if let i = item {
             clothingItemImageView.kf.setImage(with: i.imageURL)
+            if i.isZalando {
+                shopView.isHidden = false
+            } else {
+                shopView.isHidden = true
+            }
         }
         
         // Do any additional setup after loading the view.

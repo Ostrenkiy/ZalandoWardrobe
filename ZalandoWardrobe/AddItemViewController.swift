@@ -10,6 +10,7 @@ import Foundation
 
 import UIKit
 import ImagePicker
+import SVProgressHUD
 
 class ColorItem {
     private(set) var color:UIColor
@@ -77,21 +78,25 @@ class AddItemViewController: UITableViewController {
         let colorsSelected = colors!
             .filter{$0.isSelected}
             .map{$0.color}
+        SVProgressHUD.show()
         APIDataDownloader.media.create(image: itemImage!, success: {
             [weak self]
             hash in
             APIDataDownloader.clothes.create(hash: hash, category: self!.selectedClothingType!.serverName, colors: colorsSelected, image: self!.itemImage!, success: {
                 [weak self]
                 item in
+                SVProgressHUD.showSuccess(withStatus: "Added item")
                 self?.completionBlock?(item)
                 _ = self?.navigationController?.popViewController(animated: true)
             }, error: {
                 errorMsg in
                 print(errorMsg)
+                SVProgressHUD.showError(withStatus: errorMsg)
             })
         }, error: {
             errorMsg in
             print(errorMsg)
+            SVProgressHUD.showError(withStatus: errorMsg)
         })
     }
 }

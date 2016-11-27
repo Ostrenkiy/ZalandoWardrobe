@@ -28,8 +28,8 @@ class MyClothesViewController: UIViewController {
         let rc = UIRefreshControl()
         rc.addTarget(self, action: #selector(MyClothesViewController.refreshClothes), for: UIControlEvents.valueChanged)
         collectionView.refreshControl = rc
-        collectionView.refreshControl?.beginRefreshing()
         refreshClothes()
+        collectionView.refreshControl?.beginRefreshing()
     }
     
     @IBAction func addItem(_ sender: Any) {
@@ -111,7 +111,6 @@ extension MyClothesViewController: UICollectionViewDataSource, UICollectionViewD
         cell.initWithItem(clothingItem: i)
         return cell
     }
-    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let viewWidth =  collectionView.frame.size.width

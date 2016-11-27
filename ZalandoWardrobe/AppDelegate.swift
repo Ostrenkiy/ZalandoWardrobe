@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = Styler.whiteColor()
         UINavigationBar.appearance().tintColor = Styler.orangeColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : Styler.blackColor()]
-
+        SVProgressHUD.setMinimumDismissTimeInterval(1)
         // Override point for customization after application launch.
         return true
     }

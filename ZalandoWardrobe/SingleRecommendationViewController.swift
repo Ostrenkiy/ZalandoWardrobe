@@ -28,15 +28,19 @@ class SingleRecommendationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "BrowseItemSegue" {
+            let dvc = segue.destination as! ClothingItemViewController
+            dvc.item = sender as? ClothingItem
+        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }
 
@@ -49,6 +53,10 @@ extension SingleRecommendationViewController: UICollectionViewDelegate, UICollec
         let viewWidth =  collectionView.frame.size.width
         let viewHeight = collectionView.frame.size.height
         return CGSize(width: viewWidth / 2, height: viewHeight / 2)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "BrowseItemSegue", sender: items[indexPath.item])
     }
     
 }
@@ -71,4 +79,3 @@ extension SingleRecommendationViewController: UICollectionViewDataSource {
         return cell
     }
 }
-

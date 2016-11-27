@@ -43,7 +43,7 @@ class ClothesAPI {
             "media_key": hash,
             "is_zalando": false,
             "category_name": category,
-            "colors" : colors.map({"#\($0.hexString())"})
+            "colors" : colors.flatMap({"#\($0.hexString()!)"})
         ]
         
         Alamofire.request("http://delivery-service-api.appspot.com/v1/users/ahZlfmRlbGl2ZXJ5LXNlcnZpY2UtYXBpchELEgRVc2VyGICAgICAgIAKDA/cloths/", method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).responseSwiftyJSON({
@@ -68,7 +68,23 @@ class ClothesAPI {
                 errorHandler("Could not do anything")
             }
         })  
+    }
+    
+    func delete(hash: String, success successHandler: @escaping (Void) -> Void, error errorHandler : @escaping (String) -> Void) {
+        Alamofire.request("http://delivery-service-api.appspot.com/v1/cloths/\(hash)", method: .delete, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseSwiftyJSON({
+            response in
+            
+            if let e = response.result.error as? NSError {
+                errorHandler("CREATE clothes: error \(e.domain) \(e.code): \(e.localizedDescription)")
+                return
+            }
+            
+            if response.response?.statusCode != 204 {
+                errorHandler("CREATE clothes: bad response status code \(response.response?.statusCode)")
+            } else {
+                successHandler()
+            }
+        })  
 
-        
     }
 }

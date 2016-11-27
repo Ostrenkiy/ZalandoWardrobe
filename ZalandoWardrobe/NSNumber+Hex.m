@@ -27,7 +27,9 @@
 // http://lists.apple.com/archives/Cocoa-dev/2005/Jan/msg01253.html
 - (NSString *)hexString
 {
-	return [NSString stringWithFormat:@"0x%x", [self intValue]];
+//	return [NSString stringWithFormat:@"0x%x", [self intValue]];
+    return [NSString stringWithFormat:@"%02x", [self intValue]];
+
 }
 
 @end

@@ -12,6 +12,7 @@ target 'ZalandoWardrobe' do
   pod 'SnapKit'
   pod 'Kingfisher'
   pod 'FLKAutoLayout'
+  pod 'SVProgressHUD'
   # Pods for ZalandoWardrobe
 
   target 'ZalandoWardrobeTests' do
