@@ -35,7 +35,7 @@ class SingleRecommendationViewController: UIViewController {
         let location = sender.location(ofTouch: 0, in: collectionView)
         let locationInCollection = CGPoint(x: location.x, y: location.y)
         let indexPathOptional = collectionView.indexPathForItem(at: locationInCollection)
-        if let indexPath = indexPathOptional {
+        if let indexPath = indexPathOptional, items[indexPath.item].isZalando {
             performSegue(withIdentifier: "BrowseItemSegue", sender: items[indexPath.item])
         }
     }

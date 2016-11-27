@@ -15,7 +15,6 @@ class ClothingItemViewController: UIViewController {
     @IBOutlet weak var clothingItemImageView: UIImageView!
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var shopView: UIView!
     
     var item: ClothingItem?
     
