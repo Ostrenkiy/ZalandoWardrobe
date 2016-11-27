@@ -18,6 +18,8 @@ class ClothingItem {
     var zalandoURL : URL?
     var category: String
     var colors : [UIColor] = []
+    var zalandoName: String? = nil
+    var price: String? = nil
     
     init(imageURL: URL, isZalando: Bool) {
         self.imageURL = imageURL
@@ -41,6 +43,8 @@ class ClothingItem {
         } else {
             self.zalandoURL = nil
         }
+        self.zalandoName = json["zalando_name"].string
+        self.price = json["price"].string
 //        self.imageHash = json["media"]["hash"].stringValue
 //        for hexString in json["media"].arrayValue.map({$0.stringValue}) {
 //            colors += [UIColor(hexString: hexString)]

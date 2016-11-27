@@ -8,6 +8,7 @@
 
 import UIKit
 import FLKAutoLayout
+import SVProgressHUD
 
 class RecommendationsContainerViewController: UIViewController {
 
@@ -21,24 +22,47 @@ class RecommendationsContainerViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        let set1 = ItemSet(items: [
-            ClothingItem(imageURL: URL(string: "https://mosaic02.ztat.net/vgs/media/pdp-gallery/BQ/02/2D/00/5K/11/BQ022D005-K11@12.jpg")!, isZalando: true),
-            ClothingItem(imageURL: URL(string: "https://i2.ztat.net/detail/BE/82/4G/00/2C/11/BE824G002-C11@8.jpg")!, isZalando: false),
-            ClothingItem(imageURL: URL(string: "https://mosaic02.ztat.net/vgs/media/pdp-gallery/AD/12/2E/02/7Q/11/AD122E027-Q11@11.jpg")!, isZalando: false),
-            ClothingItem(imageURL: URL(string: "https://mosaic01.ztat.net/vgs/media/pdp-gallery/NI/11/2B/02/VC/12/NI112B02V-C12@10.jpg")!, isZalando: true)
-            ])
-        
-        let set2 = ItemSet(items: [
-            ClothingItem(imageURL: URL(string: "https://i2.ztat.net/detail/BE/82/4G/00/2C/11/BE824G002-C11@8.jpg")!, isZalando: false),
-            ClothingItem(imageURL: URL(string: "https://mosaic02.ztat.net/vgs/media/pdp-gallery/AD/12/2E/02/7Q/11/AD122E027-Q11@11.jpg")!, isZalando: false),
-            ClothingItem(imageURL: URL(string: "https://mosaic01.ztat.net/vgs/media/pdp-gallery/NI/11/2B/02/VC/12/NI112B02V-C12@10.jpg")!, isZalando: true),
-            ClothingItem(imageURL: URL(string: "https://mosaic02.ztat.net/vgs/media/pdp-gallery/BQ/02/2D/00/5K/11/BQ022D005-K11@12.jpg")!, isZalando: true)
-            ])
-        sets = [set1, set2]
-        
-        initPageViewController()
+//        let set1 = ItemSet(items: [
+//            ClothingItem(imageURL: URL(string: "https://mosaic02.ztat.net/vgs/media/pdp-gallery/BQ/02/2D/00/5K/11/BQ022D005-K11@12.jpg")!, isZalando: true),
+//            ClothingItem(imageURL: URL(string: "https://i2.ztat.net/detail/BE/82/4G/00/2C/11/BE824G002-C11@8.jpg")!, isZalando: false),
+//            ClothingItem(imageURL: URL(string: "https://mosaic02.ztat.net/vgs/media/pdp-gallery/AD/12/2E/02/7Q/11/AD122E027-Q11@11.jpg")!, isZalando: false),
+//            ClothingItem(imageURL: URL(string: "https://mosaic01.ztat.net/vgs/media/pdp-gallery/NI/11/2B/02/VC/12/NI112B02V-C12@10.jpg")!, isZalando: true)
+//            ])
+//        
+//        let set2 = ItemSet(items: [
+//            ClothingItem(imageURL: URL(string: "https://i2.ztat.net/detail/BE/82/4G/00/2C/11/BE824G002-C11@8.jpg")!, isZalando: false),
+//            ClothingItem(imageURL: URL(string: "https://mosaic02.ztat.net/vgs/media/pdp-gallery/AD/12/2E/02/7Q/11/AD122E027-Q11@11.jpg")!, isZalando: false),
+//            ClothingItem(imageURL: URL(string: "https://mosaic01.ztat.net/vgs/media/pdp-gallery/NI/11/2B/02/VC/12/NI112B02V-C12@10.jpg")!, isZalando: true),
+//            ClothingItem(imageURL: URL(string: "https://mosaic02.ztat.net/vgs/media/pdp-gallery/BQ/02/2D/00/5K/11/BQ022D005-K11@12.jpg")!, isZalando: true)
+//            ])
+//        sets = [set1, set2]
+        refreshSets()
+//        initPageViewController()
     }
 
+    func refreshSets() {
+        SVProgressHUD.show()
+        APIDataDownloader.lookbook.retrieve(success: {
+            [weak self]
+            sets in
+            self?.sets = sets
+            self?.removePageViewController()
+            self?.initPageViewController()
+            SVProgressHUD.showSuccess(withStatus: "Here they are!")
+        }, error: {
+            errorMsg in
+            SVProgressHUD.showError(withStatus: errorMsg)
+        })
+    }
+    
+    func removePageViewController() {
+        pageViewController?.delegate = nil
+        pageViewController?.dataSource = nil
+        pageViewController?.removeFromParentViewController()
+        pageViewController?.view.removeFromSuperview()
+        pageViewController = nil
+    }
+    
     func initPageViewController() {
         pageViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RecommendationsPageViewController") as? UIPageViewController
         

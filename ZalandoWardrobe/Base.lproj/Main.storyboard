@@ -41,7 +41,7 @@
         <!--Recommendations-->
         <scene sceneID="9R2-WG-KZ4">
             <objects>
-                <viewController id="ukJ-xI-vTQ" sceneMemberID="viewController">
+                <viewController id="ukJ-xI-vTQ" customClass="RecommendationsViewController" customModule="ZalandoWardrobe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Iud-5Y-bvg"/>
                         <viewControllerLayoutGuide type="bottom" id="2PK-c7-Kcg"/>
@@ -54,13 +54,18 @@
                                 <rect key="frame" x="16" y="72" width="343" height="587"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <segue destination="1XF-J4-ZaP" kind="embed" id="8HV-1T-uFc"/>
+                                    <segue destination="1XF-J4-ZaP" kind="embed" identifier="EmbedRecommendationSegue" id="8HV-1T-uFc"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Recommendations" id="uZP-Hr-blv">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="8QX-j8-Dbb">
+                            <connections>
+                                <action selector="refreshPressed:" destination="ukJ-xI-vTQ" id="Tk4-Gl-CyD"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="wardrobe-bar" id="KHk-Lo-Vjz">
                             <connections>
                                 <segue destination="sap-aH-uvB" kind="show" id="Lpd-om-yym"/>

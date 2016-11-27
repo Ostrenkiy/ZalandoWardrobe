@@ -15,4 +15,5 @@ import Alamofire
 class APIDataDownloader {
     static let media = MediaAPI()
     static let clothes = ClothesAPI()
+    static let lookbook = LookbookAPI()
 }
