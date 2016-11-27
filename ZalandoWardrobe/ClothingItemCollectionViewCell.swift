@@ -12,8 +12,7 @@ import Kingfisher
 class ClothingItemCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var itemImageView: UIImageView!
-    @IBOutlet weak var zalandoButton: UIButton!
-    
+    @IBOutlet weak var wardrobeMarkerImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     
@@ -28,12 +27,15 @@ class ClothingItemCollectionViewCell: UICollectionViewCell {
         } else {
             itemImageView.kf.setImage(with: clothingItem.imageURL)
         }
-        if !clothingItem.isZalando {
-            zalandoButton.isHidden = true
-            
+        if clothingItem.isZalando {
+            wardrobeMarkerImageView.isHidden = true
+            titleLabel.text = clothingItem.zalandoName!
+            subtitleLabel.text = clothingItem.price
+        } else {
+            wardrobeMarkerImageView.isHidden = false
             let readableName = Array(Clothes.getAllClothes().values)
                 .reduce([], +)
-                .filter({ a in 
+                .filter({ a in
                     return a.serverName == clothingItem.category
                 })
                 .first!
@@ -41,10 +43,6 @@ class ClothingItemCollectionViewCell: UICollectionViewCell {
             
             titleLabel.text = readableName
             subtitleLabel.text = "Your wardrobe"
-        } else {
-            zalandoButton.isHidden = false
-            titleLabel.text = clothingItem.zalandoName!
-            subtitleLabel.text = clothingItem.price
         }
         setupView() 
     }

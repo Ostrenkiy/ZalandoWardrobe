@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,6 +21,13 @@
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZuP-hY-L7c">
                         <rect key="frame" x="10" y="10" width="130" height="180"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wardrobe Cloth Marker" translatesAutoresizingMaskIntoConstraints="NO" id="Qo9-p2-obQ">
+                        <rect key="frame" x="100" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="RZg-tC-ZKG"/>
+                            <constraint firstAttribute="width" secondItem="Qo9-p2-obQ" secondAttribute="height" multiplier="1:1" id="pm4-5j-aAU"/>
+                        </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j65-1s-56U">
                         <rect key="frame" x="10" y="140" width="130" height="50"/>
@@ -38,22 +46,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szu-y9-Ajc">
-                                <rect key="frame" x="82" y="5" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="7zM-cc-MAz"/>
-                                    <constraint firstAttribute="height" constant="40" id="Ne0-7Y-8qn"/>
-                                </constraints>
-                                <state key="normal" image="Buy">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="selected" image="Buy"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="0.81999999999999995" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="szu-y9-Ajc" secondAttribute="trailing" constant="8" id="q91-5f-cRu"/>
-                            <constraint firstItem="szu-y9-Ajc" firstAttribute="centerY" secondItem="j65-1s-56U" secondAttribute="centerY" id="usR-YU-AOL"/>
                             <constraint firstAttribute="height" constant="50" id="vKf-fm-4ew"/>
                         </constraints>
                     </view>
@@ -62,10 +57,12 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="ZuP-hY-L7c" secondAttribute="trailing" constant="10" id="9aa-xL-GPP"/>
                 <constraint firstItem="j65-1s-56U" firstAttribute="bottom" secondItem="ZuP-hY-L7c" secondAttribute="bottom" id="A4R-mF-DI2"/>
+                <constraint firstItem="Qo9-p2-obQ" firstAttribute="trailing" secondItem="ZuP-hY-L7c" secondAttribute="trailing" id="ERa-7k-oUg"/>
                 <constraint firstItem="ZuP-hY-L7c" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="MUB-hy-z0u"/>
                 <constraint firstItem="j65-1s-56U" firstAttribute="trailing" secondItem="ZuP-hY-L7c" secondAttribute="trailing" id="X2D-XA-4qX"/>
                 <constraint firstItem="ZuP-hY-L7c" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="bfd-EA-FPd"/>
                 <constraint firstItem="j65-1s-56U" firstAttribute="leading" secondItem="ZuP-hY-L7c" secondAttribute="leading" id="i5m-hY-MjB"/>
+                <constraint firstItem="Qo9-p2-obQ" firstAttribute="top" secondItem="ZuP-hY-L7c" secondAttribute="top" id="rZy-OZ-whR"/>
                 <constraint firstAttribute="bottom" secondItem="ZuP-hY-L7c" secondAttribute="bottom" constant="10" id="wqs-uq-wRU"/>
             </constraints>
             <size key="customSize" width="121" height="183"/>
@@ -73,12 +70,12 @@
                 <outlet property="itemImageView" destination="ZuP-hY-L7c" id="waO-j4-fGC"/>
                 <outlet property="subtitleLabel" destination="AeD-fW-bGk" id="b1E-hL-pNR"/>
                 <outlet property="titleLabel" destination="0Kh-6s-IAp" id="x43-Tp-u91"/>
-                <outlet property="zalandoButton" destination="szu-y9-Ajc" id="sfb-uR-UWp"/>
+                <outlet property="wardrobeMarkerImageView" destination="Qo9-p2-obQ" id="tpW-Ea-kQI"/>
             </connections>
             <point key="canvasLocation" x="69" y="58"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Buy" width="100" height="100"/>
+        <image name="Wardrobe Cloth Marker" width="124" height="124"/>
     </resources>
 </document>
